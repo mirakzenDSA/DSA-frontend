@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Dark Souls Achievements checklist" />
+        <meta name="author" content="Mir, mirakzen" />
+
+        <title>DS3 Пиромантия | DSA</title>
+        <link rel="shortcut icon" href="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Dark_Sign.png" />
+
+        <link href="../custom_style.css" rel="stylesheet" />
+    </head>
+
+    <body class="text-white">
+        <header class="container container-flex">
+            <a class="navbar-brand" href="../index.html">DSA</a>
+            <div class="element-center">
+                <a class="navbar-link">Dark Souls</a>
+                <a class="navbar-link">Dark Souls II</a>
+                <a class="navbar-link" href="../ds3/index.html">Dark Souls III</a>
+            </div>
+            <a class="navbar-brand">En</a>
+        </header>
+
+        <div class="container text-center pb-05">
+            <a class="navbar-link-sm text-white" href="achievements.html">Достижения</a>
+            <a class="navbar-link-sm text-white" href="questlines.html">Персонажи и квесты</a>
+            <a class="navbar-link-sm text-white" href="infusion.html">Закалка</a>
+            <a class="navbar-link-sm text-white" href="sorceries.html">Чары</a>
+            <a class="navbar-link-sm text-faded">Пиромантия</a>
+            <a class="navbar-link-sm text-white" href="miracles.html">Чудеса</a>
+            <a class="navbar-link-sm text-white" href="rings.html">Кольца</a>
+            <a class="navbar-link-sm text-white" href="gestures.html">Жесты</a>
+            <a class="navbar-link-sm text-white" href="bonfire_and_estus.html">Костер и Эстус</a>
+            <a class="navbar-link-sm text-white" href="covenants.html">Ковенанты</a>
+        </div>
+
+        <main class="container container-background rounded-border">
+            <div class="container-margin">
+                <div class="container-flex">
+                    <h1>Dark Souls III <a href="https://darksouls.fandom.com/ru/wiki/%D0%9F%D0%B8%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%8F_(Dark_Souls_III)">Пиромантия</a></h1>
+
+                    <h1 class="element-end" id="counter1">0</h1>
+                    <h1>/30</h1>
+                </div>
+
+                <table id="table1">
+                    <tbody>
+                        <tr>
+                            <th class="text-center">Заклинание</th>
+                            <th class="text-center">Местоположение</th>
+                            <th class="text-center">Подробности</th>
+                            <th class="text-center th-padding">Условия</th>
+                            <th class="text-center">Отметка</th>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-1">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9E%D0%B3%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%88%D0%B0%D1%80_(Dark_Souls_III)">
+                                    <img alt="Fireball.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Fireball.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Огненный шар
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                <li>Начальное заклинание класса <a href="https://darksouls.fandom.com/ru/wiki/%D0%9F%D0%B8%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D1%82_(Dark_Souls_III)">Пиромант</a>.</li>
+                                <li>
+                                    Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (1000).
+                                </li>
+                            </td>
+                            <td class="text-center td-padding">
+                                Освободить Корникса в Поселении Нежити (переписать на всех персов)
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-2">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9E%D0%B3%D0%BD%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D1%84%D0%B5%D1%80%D0%B0_(Dark_Souls_III)">
+                                    <img alt="Fire_Orb.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Fire_Orb.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Огненная сфера
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (3000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Great_Swamp_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Great_Swamp_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии Великой топи
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-3">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D0%B9_%D0%BE%D0%B3%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%88%D0%B0%D1%80">
+                                    <img alt="Bursting_Fireball.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Bursting_Fireball.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Разрывной огненный шар
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (5000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Great_Swamp_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Great_Swamp_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии Великой топи
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-4">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F_%D0%BE%D0%B3%D0%BD%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D1%84%D0%B5%D1%80%D0%B0_%D1%85%D0%B0%D0%BE%D1%81%D0%B0">
+                                    <img alt="Great_Chaos_Fire_Orb.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Great_Chaos_Fire_Orb.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Большая огненная сфера хаоса
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (10000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Izalith_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Izalith_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии Изалита
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-5">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9F%D1%80%D0%B0%D1%85_%D0%9B%D0%BE%D0%B6%D0%B0_%D1%85%D0%B0%D0%BE%D1%81%D0%B0">
+                                    <img alt="Chaos_Bed_Vestiges.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Chaos_Bed_Vestiges.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Прах Ложа хаоса
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Обмен у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9B%D1%83%D0%B4%D0%BB%D0%B5%D1%82_%D0%9A%D1%83%D1%80%D0%BB%D1%8F%D0%BD%D0%B4%D1%81%D0%BA%D0%B8%D0%B9">Лудлета Курляндского</a> (5000).
+                            </td>
+                            
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%94%D1%83%D1%88%D0%B0_%D1%81%D1%82%D0%B0%D1%80%D0%BE%D0%B3%D0%BE_%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8F_%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2">
+                                    <img alt="Soul_of_the_Old_Demon_King.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/souls/Soul_of_the_Old_Demon_King.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Душа cтарого короля демонов
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-6">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9E%D0%B3%D0%BD%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D1%83%D1%8F_(Dark_Souls_III)">
+                                    <img alt="Fire_Surge.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Fire_Surge.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Огненная струя
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td colspan="2" class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (1000).
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-7">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9E%D0%B3%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BD%D1%83%D1%82_(Dark_Souls_III)">
+                                    <img alt="Fire_Whip.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Fire_Whip.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Огненный кнут
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%B0%D1%80%D0%BB%D0%B0">Карлы</a> (10000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Quelana_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Quelana_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии Квиланы
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-8">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9E%D0%B3%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%88%D1%82%D0%BE%D1%80%D0%BC_(Dark_Souls_III)">
+                                    <img alt="Firestorm.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Firestorm.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Огненный шторм
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%B0%D1%80%D0%BB%D0%B0">Карлы</a> (15000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Quelana_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Quelana_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии Квиланы
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-9">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A8%D1%82%D0%BE%D1%80%D0%BC_%D1%85%D0%B0%D0%BE%D1%81%D0%B0_(Dark_Souls_III)">
+                                    <img alt="Chaos_Storm.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Chaos_Storm.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Шторм Хаоса
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (12000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Izalith_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Izalith_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии Изалита
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-10">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9C%D0%BE%D1%89%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D0%B4%D0%B6%D0%BE%D0%B3">
+                                    <img alt="Great_Combustion.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Great_Combustion.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Мощный поджог
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td colspan="2" class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (3000).
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-11">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A1%D0%B2%D1%8F%D1%89%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BF%D0%BB%D0%B0%D0%BC%D1%8F">
+                                    <img alt="Sacred_Flame.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Sacred_Flame.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Священное пламя
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A2%D0%BB%D0%B5%D1%8E%D1%89%D0%B5%D0%B5_%D0%9E%D0%B7%D0%B5%D1%80%D0%BE">Тлеющее Озеро</a>
+                            </td>
+                            <td colspan="2" class="td-padding">
+                                У левого трупа в лаве в комнате с <a href="https://darksouls.fandom.com/ru/wiki/%D0%A3%D0%B1%D0%B8%D0%B9%D1%86%D0%B0_%D1%80%D1%8B%D1%86%D0%B0%D1%80%D0%B5%D0%B9_%D0%A6%D0%BE%D1%80%D0%B8%D0%B3">Убийцей рыцарей Цоригом</a>.
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-12">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9E%D1%81%D0%BA%D0%B2%D0%B5%D1%80%D0%BD%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BF%D0%BB%D0%B0%D0%BC%D1%8F">
+                                    <img alt="Profaned_Flame.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Profaned_Flame.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Оскверненное пламя
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9F%D0%BE%D0%B4%D0%B7%D0%B5%D0%BC%D0%B5%D0%BB%D1%8C%D0%B5_%D0%98%D1%80%D0%B8%D1%82%D0%B8%D0%BB%D0%BB%D0%B0">Подземелье Иритилла</a>
+                            </td>
+                            <td colspan="2" class="td-padding">
+                                Лежит на трупе в яме с гигантом и крысами.
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-13">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9E%D1%82%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%89%D0%B8%D0%B9_%D1%82%D1%83%D0%BC%D0%B0%D0%BD_(Dark_Souls_III)">
+                                    <img alt="Poison_Mist.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Poison_Mist.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Отравляющий туман
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (2000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Great_Swamp_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Great_Swamp_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии Великой топи
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-14">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%AF%D0%B4%D0%BE%D0%B2%D0%B8%D1%82%D1%8B%D0%B9_%D1%82%D1%83%D0%BC%D0%B0%D0%BD_(Dark_Souls_III)">
+                                    <img alt="Toxic_Mist.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Toxic_Mist.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Ядовитый туман
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A2%D0%BB%D0%B5%D1%8E%D1%89%D0%B5%D0%B5_%D0%BE%D0%B7%D0%B5%D1%80%D0%BE">Тлеющее озеро</a>
+                            </td>
+                            <td colspan="2" class="td-padding">
+                                На трупе в озере лавы в подземельях. Попасть туда можно спустившись вниз по лестнице из коридора с трупом паукообразного существа (вероятней всего <a href="https://darksouls.fandom.com/ru/wiki/%D0%9F%D1%80%D0%B5%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F_%D0%93%D0%BE%D1%81%D0%BF%D0%BE%D0%B6%D0%B0">Прекрасной Госпожи</a>), которого скрывает <a href="https://darksouls.fandom.com/ru/wiki/%D0%98%D0%BB%D0%BB%D1%8E%D0%B7%D0%BE%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B5%D0%BD%D1%8B_(Dark_Souls_III)">иллюзорная стена</a>. Или через провал в узком коридоре. Заклинание лежит на ближнем ко входу трупе.
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-15">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%B8%D1%81%D0%BB%D0%BE%D1%82%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D1%83%D1%8F_(Dark_Souls_III)">
+                                    <img alt="Acid_Surge.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Acid_Surge.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Кислотная струя
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (6000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Carthus_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Carthus_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии Картуса
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-16">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9C%D0%B3%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D1%82">
+                                    <img alt="Flash_Sweat.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Flash_Sweat.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Мгновенный пот
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td colspan="2" class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (1500).
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-17">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9E%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D1%82">
+                                    <img alt="Profuse_Sweat.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Profuse_Sweat.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Обильный пот
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (2000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Great_Swamp_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Great_Swamp_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии Великой топи
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-18">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BB%D0%BE%D1%82%D1%8C_(Dark_Souls_III)">
+                                    <img alt="Iron_Flesh.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Iron_Flesh.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Железная плоть
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A6%D0%B8%D1%82%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C_%D0%A4%D0%B0%D1%80%D1%80%D0%BE%D0%BD%D0%B0">Цитадель Фаррона</a>
+                            </td>
+                            <td colspan="2" class="td-padding">
+                                Справа от одноименного костра, на трупе в болоте.
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-19">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%92%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%D1%8F_%D1%81%D0%B8%D0%BB%D0%B0_(Dark_Souls_III)">
+                                    <img alt="Power_Within.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Power_Within.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Внутренняя сила
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B9_%D0%B0%D1%80%D1%85%D0%B8%D0%B2">Великий архив</a>
+                            </td>
+                            <td colspan="2" class="td-padding">
+                                От первой области, где вы окунаете голову в воске, непосредственно справа в тёмной комнате. Зайдя в неё, ищите рычаг, он находится между книжными полками. Дёрнув его, вы откроете потайную комнату неподалёку, там и будет лежать заветная пиромантия.
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-20">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9C%D0%B0%D1%8F%D0%BA_%D0%9A%D0%B0%D1%80%D1%82%D1%83%D1%81%D0%B0">
+                                    <img alt="Carthus_Beacon.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Carthus_Beacon.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Маяк Картуса
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (8000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Carthus_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Carthus_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии Картуса
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-21">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9E%D0%B3%D0%BD%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B4%D1%83%D0%B3%D0%B0_%D0%9A%D0%B0%D1%80%D1%82%D1%83%D1%81%D0%B0">
+                                    <img alt="Carthus_Flame_Arc.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Carthus_Flame_Arc.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Огненная дуга Картуса
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникса из Великой топи</a> (10000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Carthus_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Carthus_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии Картуса
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-22">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A2%D0%B5%D0%BF%D0%BB%D0%BE%D1%82%D0%B0_(Dark_Souls_III)">
+                                    <img alt="Warmth.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Warmth.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Теплота
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Награда за 2 ранг у ковенанта <a href="https://darksouls.fandom.com/ru/wiki/%D0%9C%D0%B0%D1%80%D0%BE%D0%B4%D0%B5%D1%80%D1%8B">Мародеры</a>
+                            </td>                            
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%81%D1%82%D1%8F%D0%BD%D1%8B%D0%B5_%D0%BE%D0%BA%D0%BE%D0%B2%D1%8B">
+                                    <img alt="Vertebra_Shackle.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/covenants/Vertebra_Shackle.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Костяные Оковы
+                                </a>
+                                (30)
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-23">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%93%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D0%B8%D1%8F">
+                                    <img alt="Rapport.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Rapport.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Гармония
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%B0%D1%80%D0%BB%D0%B0">Карлы</a> (7000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Quelana_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Quelana_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии Квиланы
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-24">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%91%D1%80%D0%BE%D1%81%D0%BE%D0%BA_%D0%B1%D1%83%D0%BB%D1%8B%D0%B6%D0%BD%D0%B8%D0%BA%D0%B0">
+                                    <img alt="Boulder_Heave.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Boulder_Heave.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Бросок булыжника
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Обмен у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9B%D1%83%D0%B4%D0%BB%D0%B5%D1%82_%D0%9A%D1%83%D1%80%D0%BB%D1%8F%D0%BD%D0%B4%D1%81%D0%BA%D0%B8%D0%B9">Лудлета Курляндского</a>.
+                            </td>
+                            
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%94%D1%83%D1%88%D0%B0_%D0%B7%D0%B0%D0%B1%D0%BB%D1%83%D0%B4%D1%88%D0%B5%D0%B3%D0%BE_%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%B0">
+                                    <img alt="Soul_of_a_Stray_Demon.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/souls/Soul_of_a_Stray_Demon.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Душа заблудшего демона
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-25">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%B5_%D0%BF%D0%BB%D0%B0%D0%BC%D1%8F_(Dark_Souls_III)">
+                                    <img alt="Black_Flame.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Black_Flame.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Черное пламя
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%B0%D1%80%D0%BB%D0%B0">Карлы</a> (10000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Grave_Warden_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Grave_Warden_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии хранителя могил
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-26">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A7%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D0%BE%D0%B3%D0%BD%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D1%84%D0%B5%D1%80%D0%B0">
+                                    <img alt="Black_Fire_Orb.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Black_Fire_Orb.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Черная огненная сфера
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Покупка у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%B0%D1%80%D0%BB%D0%B0">Карлы</a> (10000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="#Pyromancy-Tomes">
+                                    <img alt="Grave_Warden_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Grave_Warden_Pyromancy_Tome.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Книга о пиромантии хранителя могил
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-27">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A7%D0%B5%D1%80%D0%BD%D1%8B%D0%B9_%D0%B7%D0%BC%D0%B5%D0%B9">
+                                    <img alt="Black_Serpent.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Black_Serpent.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Черный змей
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Обмен у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9B%D1%83%D0%B4%D0%BB%D0%B5%D1%82_%D0%9A%D1%83%D1%80%D0%BB%D1%8F%D0%BD%D0%B4%D1%81%D0%BA%D0%B8%D0%B9">Лудлета Курляндского</a>.
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%94%D1%83%D1%88%D0%B0_%D0%B2%D0%B5%D1%80%D1%85%D0%BE%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D0%BE%D0%B2%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8F_%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%80%D0%B0">
+                                    <img alt="Soul_of_High_Lord_Wolnir.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/souls/Soul_of_High_Lord_Wolnir.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Душа верховного повелителя Вольнира
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="5" class="text-center">
+                                <h3>
+                                    Заклинание пиромании из DLC Ashes of Ariandel
+                                </h3>
+                            </th>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-28">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9F%D0%BB%D1%8B%D0%B2%D1%83%D1%89%D0%B8%D0%B9_%D1%85%D0%B0%D0%BE%D1%81">
+                                    <img alt="Floating_Chaos.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Floating_Chaos.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Плывущий хаос
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9D%D0%B0%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B8%D1%80_%D0%90%D1%80%D0%B8%D0%B0%D0%BD%D0%B4%D0%B5%D0%BB%D1%8F">Нарисованный мир Арианделя</a>
+                            </td>
+                            <td colspan="2" class="td-padding">
+                                Выпадает при убийстве безумного фантома <a href="https://darksouls.fandom.com/ru/wiki/%D0%9C%D0%B5%D1%87%D0%B5%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B8%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D1%82_%D0%94%D0%B0%D0%BD%D0%BD%D0%B5%D0%BB">Меченый пиромант Даннел</a>. Фантом вторгнется на круглой арене, для нахождения которой нужно выйти из подвала, полного <a href="https://darksouls.fandom.com/ru/wiki/%D0%93%D0%B8%D0%B3%D0%B0%D0%BD%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BC%D1%83%D1%85%D0%B0">гигантских мух</a>, начиная свой путь от костра <b>Заснеженный перевал</b> через <a href="https://darksouls.fandom.com/ru/wiki/%D0%98%D0%BB%D0%BB%D1%8E%D0%B7%D0%BE%D1%80%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B5%D0%BD%D1%8B_(Dark_Souls_III)">иллюзорную стену</a> на улицу, после чего спуститься по корням деревьев.
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="5" class="text-center">
+                                <h3>
+                                    Заклинание пиромании из DLC The Ringed City
+                                </h3>
+                            </th>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-29">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%92%D0%B5%D0%B5%D1%80_%D0%BF%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D0%B8">
+                                    <img alt="Flame_Fan.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Flame_Fan.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Веер пламени
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%93%D1%80%D1%83%D0%B4%D0%B0_%D0%BE%D1%82%D0%B1%D1%80%D0%BE%D1%81%D0%BE%D0%B2">Груда отбросов</a>
+                            </td>
+                            <td colspan="2" class="td-padding">
+                                Выпадает с <a href="https://darksouls.fandom.com/ru/wiki/%D0%9F%D1%83%D1%81%D1%82%D1%8B%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B2%D0%B5%D0%B4%D1%8C%D0%BC%D0%B0_%D0%97%D0%BE%D0%B8">Пустынной ведьмы Зои</a>. От костра <b>Руины Земляного Пика</b>, к болоту, подняться по корням в дальнем конце.
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy-30">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%91%D1%83%D1%80%D0%BB%D1%8F%D1%89%D0%B8%D0%B9_%D1%85%D0%B0%D0%BE%D1%81">
+                                    <img alt="Seething_Chaos.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Seething_Chaos.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Бурлящий хаос
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%BE%D0%B3%D0%BD%D1%8F_(Dark_Souls_III)">Храм огня</a>
+                            </td>
+                            <td class="td-padding">
+                                Обмен у <a href="https://darksouls.fandom.com/ru/wiki/%D0%9B%D1%83%D0%B4%D0%BB%D0%B5%D1%82_%D0%9A%D1%83%D1%80%D0%BB%D1%8F%D0%BD%D0%B4%D1%81%D0%BA%D0%B8%D0%B9">Лудлета Курляндского</a> (10000).
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%94%D1%83%D1%88%D0%B0_%D0%94%D0%B5%D0%BC%D0%BE%D0%BD%D0%B0-%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B0">
+                                    <img alt="Soul_of_the_Demon_Prince.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/souls/Soul_of_the_Demon_Prince.png" decoding="async" width="90" height="90" />
+                                    <br />
+                                    Душа Демона-принца
+                                </a>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="container-flex">
+                    <h2 id="Pyromancy-Tomes">Книги Пиромантии</h2>
+
+                    <h2 class="element-end" id="counter2">0</h2>
+                    <h2>/5</h2>
+                </div>
+
+                <table id="table2">
+                    <tbody>
+                        <tr>
+                            <th class="text-center">Книга</th>
+                            <th class="text-center">Наставник</th>
+                            <th class="text-center">Местоположение</th>
+                            <th class="text-center">Подробности</th>
+                            <th class="text-center">Отметка</th>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy_tome-1">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0_%D0%BE_%D0%BF%D0%B8%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D0%B8_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">
+                                    <img alt="Great_Swamp_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Great_Swamp_Pyromancy_Tome.png" decoding="async" width="100" height="100" />
+                                    <br />
+                                    Книга о пиромантии Великой топи
+                                </a>
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникс из Великой топи</a>
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9F%D1%83%D1%82%D1%8C_%D0%B6%D0%B5%D1%80%D1%82%D0%B2">Путь жертв</a>
+                            </td>
+                            <td class="td-padding">
+                                От костра <b>Лес мучений</b> нужно пройти вперед до трупа около внешней стены, который под деревом, вместе с <a href="https://darksouls.fandom.com/ru/wiki/%D0%A1%D0%B5%D1%82_%D0%B7%D0%BD%D0%B0%D1%85%D0%B0%D1%80%D1%8F">сетом знахаря</a>. Рекомендуется быстро бежать и перекатываться так как сокровища охраняются <a href="https://darksouls.fandom.com/ru/wiki/%D0%93%D0%B8%D0%B3%D0%B0%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D1%80%D0%B0%D0%B1">гигантским крабом</a>.
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy_tome-2">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0_%D0%BE_%D0%BF%D0%B8%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D0%B8_%D0%9A%D0%B0%D1%80%D1%82%D1%83%D1%81%D0%B0">
+                                    <img alt="Carthus_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Carthus_Pyromancy_Tome.png" decoding="async" width="100" height="100" />
+                                    <br />
+                                    Книга о пиромантии Картуса
+                                </a>
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникс из Великой топи</a>
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%B0%D1%82%D0%B0%D0%BA%D0%BE%D0%BC%D0%B1%D1%8B_%D0%9A%D0%B0%D1%80%D1%82%D1%83%D1%81%D0%B0">Катакомбы Картуса</a>
+                            </td>
+                            <td class="td-padding">
+                                От костра <b>Хранители Бездны</b> спуститесь вниз и идите прямо по мосту, затем слева поднимитесь по лестнице. Следуйте по коридору налево, вы наткнётесь на лестницу ведущую вниз. Спустившись туда пройдите вперёд, вы попадёте в длинную комнату. Справа от вас будет призрачная стена, ударьте по ней. Идите прямо по коридору, справа от вас будет лежать книга.<br>Быстрее спрыгнуть с середины моста на выступ с двумя колоннами и убить двух скелетов. Том будет прямо перед вами в конце коридора.
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy_tome-3">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0_%D0%BE_%D0%BF%D0%B8%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D0%B8_%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8F_%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB">
+                                    <img alt="Grave_Warden_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Grave_Warden_Pyromancy_Tome.png" decoding="async" width="100" height="100" />
+                                    <br />
+                                    Книга о пиромантии хранителя могил
+                                </a>
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%B0%D1%80%D0%BB%D0%B0">Карла</a>
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%B0%D1%82%D0%B0%D0%BA%D0%BE%D0%BC%D0%B1%D1%8B_%D0%9A%D0%B0%D1%80%D1%82%D1%83%D1%81%D0%B0">Катакомбы Картуса</a>
+                            </td>
+                            <td class="td-padding">
+                                Когда вы прикоснетесь к чаше, находящейся в большом зале в конце катакомб, вас перенесёт на арену с <a href="https://darksouls.fandom.com/ru/wiki/%D0%92%D0%B5%D1%80%D1%85%D0%BE%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D0%B2%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%80">боссом</a>. Книга находится на трупе, который лежит перед боссом. В случае, если вы не подобрали книгу на арене с боссом, она будет лежать на трупе в левом верхнем углу комнаты, где находится костер <b>Верховный повелитель Вольнир</b>.
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy_tome-4">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0_%D0%BE_%D0%BF%D0%B8%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D0%B8_%D0%9A%D0%B2%D0%B8%D0%BB%D0%B0%D0%BD%D1%8B">
+                                    <img alt="Quelana_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Quelana_Pyromancy_Tome.png" decoding="async" width="100" height="100" />
+                                    <br />
+                                    Книга о пиромантии Квиланы
+                                </a>
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%B0%D1%80%D0%BB%D0%B0">Карла</a>
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A2%D0%BB%D0%B5%D1%8E%D1%89%D0%B5%D0%B5_%D0%BE%D0%B7%D0%B5%D1%80%D0%BE">Тлеющее озеро</a>
+                            </td>
+                            <td class="td-padding">
+                                Находится на трупе, прильнувшем к трупу гигантского паука, окружённому яйцами, за илюзорной стеной рядом с тремя <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D1%80%D1%8B%D1%81%D0%B0_(Dark_Souls_III)">крысами</a>, под костром <b>Руины демона</b>
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_pyromancy_tome-5">
+                            <td class="text-center">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0_%D0%BE_%D0%BF%D0%B8%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D0%B8_%D0%98%D0%B7%D0%B0%D0%BB%D0%B8%D1%82%D0%B0">
+                                    <img alt="Izalith_Pyromancy_Tome.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/pyromancy/Izalith_Pyromancy_Tome.png" decoding="async" width="100" height="100" />
+                                    <br />
+                                    Книга о пиромантии Изалита
+                                </a>
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%D1%81_%D0%B8%D0%B7_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B9_%D1%82%D0%BE%D0%BF%D0%B8">Корникс из Великой топи</a>
+                            </td>
+                            <td class="text-center td-padding">
+                                <a href="https://darksouls.fandom.com/ru/wiki/%D0%A2%D0%BB%D0%B5%D1%8E%D1%89%D0%B5%D0%B5_%D0%BE%D0%B7%D0%B5%D1%80%D0%BE">Тлеющее озеро</a>
+                            </td>
+                            <td class="td-padding">
+                                От костра <b>Прихожая старого короля</b> повернуть налево в узкий коридор, по которому вы попали к этому костру, если вы разрушали пол с помощью баллисты. Сразу напротив выхода в коридор будет комната с тремя противниками. Здесь и лежит данный том пиромантии.
+                            </td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)">
+                                    <img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png" />
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer class="container text-center">
+            <span>DSA by mirakzen</span><br />
+            <span>Sources on <a href="https://github.com/mirakzen/DSA">GitHub</a></span>
+        </footer>
+
+        <script src="../marking.js"></script>
+        <script type="text/javascript">
+            window.onload = function () {
+                show_stored_page_data("ds3", false, "pyromancy", 30, "pyromancy_tome", 5);
+            };
+        </script>
+    </body>
+</html>

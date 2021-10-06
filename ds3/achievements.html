@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Dark Souls Achievements checklist">
+        <meta name="author" content="Mir, mirakzen">
+
+        <title>DS3 Достижения | DSA</title>
+        <link rel="shortcut icon" href="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Dark_Sign.png">
+
+        <link href="../custom_style.css" rel="stylesheet">
+    </head>
+
+    <body class="text-white">
+        <header class="container container-flex">
+            <a class="navbar-brand" href="../index.html">DSA</a>
+            <div class="element-center">
+                <a class="navbar-link">Dark Souls</a>
+                <a class="navbar-link">Dark Souls II</a>
+                <a class="navbar-link" href="../ds3/index.html">Dark Souls III</a>
+            </div>
+            <a class="navbar-brand">En</a>
+        </header>
+
+        <div class="container text-center pb-05">
+            <a class="navbar-link-sm text-faded">Достижения</a>
+            <a class="navbar-link-sm text-white" href="questlines.html">Персонажи и квесты</a>
+            <a class="navbar-link-sm text-white" href="infusion.html">Закалка</a>
+            <a class="navbar-link-sm text-white" href="sorceries.html">Чары</a>
+            <a class="navbar-link-sm text-white" href="pyromancy.html">Пиромантия</a>
+            <a class="navbar-link-sm text-white" href="miracles.html">Чудеса</a>
+            <a class="navbar-link-sm text-white" href="rings.html">Кольца</a>
+            <a class="navbar-link-sm text-white" href="gestures.html">Жесты</a>
+            <a class="navbar-link-sm text-white" href="bonfire_and_estus.html">Костер и Эстус</a>
+            <a class="navbar-link-sm text-white" href="covenants.html">Ковенанты</a>
+        </div>
+
+        <main class="container container-background rounded-border">
+            <div class="container-margin">
+                <div class="container-flex">
+                    <h1>Dark Souls III <a href="https://darksouls.fandom.com/ru/wiki/%D0%94%D0%BE%D1%81%D1%82%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F_(Dark_Souls_III)">Достижения</a></h1>
+
+                    <h1 class="element-end" id="counter1">0</h1>
+                    <h1>/43</h1>
+                </div>
+
+                <table id="table1">
+                    <tbody>
+                        <tr>
+                            <th class="text-center">Иконка</th>
+                            <th class="text-center">Название</th>
+                            <th class="text-center">Описание</th>
+                            <th class="text-center">Отметка</th>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-1">
+                            <td class="text-center">
+                                <img class="rounded" alt="The_Dark_Soul_3.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/The_Dark_Soul.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Тёмная Душа</td>
+                            <td>Получите все достижения.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-2">
+                            <td class="text-center">
+                                <img class="rounded" alt="To_Link_the_First_Flame.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/To_Link_the_First_Flame.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Зажечь Первое пламя</td>
+                            <td>Дойдите до концовки «Зажечь Первое пламя».</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-3">
+                            <td class="text-center">
+                                <img class="rounded" alt="The_End_of_Fire.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/The_End_of_Fire.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Конец огня</td>
+                            <td>Дойдите до концовки «Конец огня».</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-4">
+                            <td class="text-center">
+                                <img class="rounded" alt="The_Usurpation_of_Fire.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/The_Usurpation_of_Fire.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Узурпация огня</td>
+                            <td>Дойдите до концовки «<a href="./questlines.html#The_Usurpation_of_Fire">Узурпация огня</a>».</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-5">
+                            <td class="text-center">
+                                <img class="rounded" alt="Lords_of_Cinder_Abyss_Watchers.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Lords_of_Cinder_Abyss_Watchers.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Повелители пепла Хранители Бездны</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%A5%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D0%B8_%D0%91%D0%B5%D0%B7%D0%B4%D0%BD%D1%8B">Хранителей Бездны</a>, повелителей пепла.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-6">
+                            <td class="text-center">
+                                <img class="rounded" alt="Lord_of_Cinder_Yhorm_the_Giant.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Lord_of_Cinder_Yhorm_the_Giant.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Повелитель пепла: гигант Йорм</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%93%D0%B8%D0%B3%D0%B0%D0%BD%D1%82_%D0%99%D0%BE%D1%80%D0%BC">гиганта Йорма</a>, повелителя пепла.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-7">
+                            <td class="text-center">
+                                <img class="rounded" alt="Lord_of_Cinder_Aldrich,_Devourer_of_Gods.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Lord_of_Cinder_Aldrich,_Devourer_of_Gods.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Повелитель пепла: Олдрик, пожиратель богов</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%9E%D0%BB%D0%B4%D1%80%D0%B8%D0%BA,_%D0%BF%D0%BE%D0%B6%D0%B8%D1%80%D0%B0%D1%82%D0%B5%D0%BB%D1%8C_%D0%B1%D0%BE%D0%B3%D0%BE%D0%B2">Олдрика, пожирателя богов</a>, повелителя пепла.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-8">
+                            <td class="text-center">
+                                <img class="rounded" alt="Lord_of_Cinder_Lothric,_Younger_Prince.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Lord_of_Cinder_Lothric,_Younger_Prince.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Повелитель пепла: Лотрик, младший принц</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%9B%D0%BE%D1%82%D1%80%D0%B8%D0%BA,_%D0%BC%D0%BB%D0%B0%D0%B4%D1%88%D0%B8%D0%B9_%D0%BF%D1%80%D0%B8%D0%BD%D1%86">Лотрика, младшего принца</a>, повелителя пепла.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-9">
+                            <td class="text-center">
+                                <img class="rounded" alt="Supreme_Weapon_Reinforcement.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Supreme_Weapon_Reinforcement.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Максимальное укрепление оружия</td>
+                            <td>Укрепите любое оружие до максимального уровня.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-10">
+                            <td class="text-center">
+                                <img class="rounded" alt="Master_of_Infusion.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Master_of_Infusion.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Магистр закаливания</td>
+                            <td>Опробуйте все варианты закаливания.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-11">
+                            <td class="text-center">
+                                <img class="rounded" alt="Master_of_Sorceries.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Master_of_Sorceries.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Магистр чародейства</td>
+                            <td>Выучите все <a href="./sorceries.html">чары</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-12">
+                            <td class="text-center">
+                                <img class="rounded" alt="Master_of_Pyromancies.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Master_of_Pyromancies.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Магистр пиромантии</td>
+                            <td>Выучите все виды <a href="./pyromancy.html">пиромантии</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-13">
+                            <td class="text-center">
+                                <img class="rounded" alt="Master_of_Miracles.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Master_of_Miracles.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Магистр чудес</td>
+                            <td>Выучите все <a href="./miracles.html">чудеса</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-14">
+                            <td class="text-center">
+                                <img class="rounded" alt="Master_of_Rings.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Master_of_Rings.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Магистр колец</td>
+                            <td>Найдите все <a href="./rings.html">кольца</a> (необходимы так же кольца из <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D0%BB%D1%8C%D1%86%D0%B0_(Dark_Souls_III)">NG+</a> и NG++, всего 107 штук).</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-15">
+                            <td class="text-center">
+                                <img class="rounded" alt="Master_of_Expression.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Master_of_Expression.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Магистр жестов</td>
+                            <td>Выучите все <a href="./gestures.html">жесты</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-16">
+                            <td class="text-center">
+                                <img class="rounded" alt="Ultimate_Bonfire.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Ultimate_Bonfire.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Абсолютный костёр</td>
+                            <td><a href="./bonfire_and_estus.html#Undead-Bone-Shards">Укрепите</a> главный костёр до максимального уровня.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-17">
+                            <td class="text-center">
+                                <img class="rounded" alt="Ultimate_Estus.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Ultimate_Estus.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Абсолютный эстус</td>
+                            <td><a href="./bonfire_and_estus.html#Estus-Shards">Укрепите</a> флягу с эстусом до максимального уровня.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-18">
+                            <td class="text-center">
+                                <img class="rounded" alt="Covenant_Warrior_of_Sunlight.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Covenant_Warrior_of_Sunlight.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Ковенант: Воины Солнца</td>
+                            <td>Вступите в ковенант «<a href="https://darksouls.fandom.com/ru/wiki/%D0%92%D0%BE%D0%B8%D0%BD%D1%8B_%D0%A1%D0%BE%D0%BB%D0%BD%D1%86%D0%B0">Воины Солнца</a>».</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-19">
+                            <td class="text-center">
+                                <img class="rounded" alt="Covenant_Way_of_Blue.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Covenant_Way_of_Blue.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Ковенант: Лазурный путь</td>
+                            <td>Вступите в ковенант «<a href="https://darksouls.fandom.com/ru/wiki/%D0%9B%D0%B0%D0%B7%D1%83%D1%80%D0%BD%D1%8B%D0%B9_%D0%BF%D1%83%D1%82%D1%8C">Лазурный путь</a>».</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-20">
+                            <td class="text-center">
+                                <img class="rounded" alt="Covenant_Blue_Sentinels.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Covenant_Blue_Sentinels.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Ковенант: Синие стражи</td>
+                            <td>Вступите в ковенант «<a href="https://darksouls.fandom.com/ru/wiki/%D0%A1%D0%B8%D0%BD%D0%B8%D0%B5_%D1%81%D1%82%D1%80%D0%B0%D0%B6%D0%B8">Синие стражи</a>».</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-21">
+                            <td class="text-center">
+                                <img class="rounded" alt="Covenant_Blade_of_the_Darkmoon.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Covenant_Blade_of_the_Darkmoon.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Ковенант: Клинки Тёмной луны</td>
+                            <td>Вступите в ковенант «<a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BB%D0%B8%D0%BD%D0%BA%D0%B8_%D0%A2%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9_%D0%BB%D1%83%D0%BD%D1%8B_(Dark_Souls_III)">Клинки Тёмной луны</a>».</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-22">
+                            <td class="text-center">
+                                <img class="rounded" alt="Covenant_Rosaria's_Fingers.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Covenant_Rosaria's_Fingers.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Ковенант: Пальцы Розарии</td>
+                            <td>Вступите в ковенант «<a href="https://darksouls.fandom.com/ru/wiki/%D0%9F%D0%B0%D0%BB%D1%8C%D1%86%D1%8B_%D0%A0%D0%BE%D0%B7%D0%B0%D1%80%D0%B8%D0%B8">Пальцы Розарии</a>».</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-23">
+                            <td class="text-center">
+                                <img class="rounded" alt="Covenant_Mound-makers.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Covenant_Mound-makers.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Ковенант: Мародёры</td>
+                            <td>Вступите в ковенант «<a href="https://darksouls.fandom.com/ru/wiki/%D0%9C%D0%B0%D1%80%D0%BE%D0%B4%D0%B5%D1%80%D1%8B">Мародёры</a>».</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-24">
+                            <td class="text-center">
+                                <img class="rounded" alt="Covenant_Watchdogs_of_Farron.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Covenant_Watchdogs_of_Farron.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Ковенант: Сторожевые псы Фаррона</td>
+                            <td>Вступите в ковенант «<a href="https://darksouls.fandom.com/ru/wiki/%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%B2%D1%8B%D0%B5_%D0%BF%D1%81%D1%8B_%D0%A4%D0%B0%D1%80%D1%80%D0%BE%D0%BD%D0%B0">Сторожевые псы Фаррона</a>».</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-25">
+                            <td class="text-center">
+                                <img class="rounded" alt="Covenant_Aldritch_Faithful.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Covenant_Aldritch_Faithful.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Ковенант: Верные Олдрику</td>
+                            <td>Вступите в ковенант «<a href="https://darksouls.fandom.com/ru/wiki/%D0%92%D0%B5%D1%80%D0%BD%D1%8B%D0%B5_%D0%9E%D0%BB%D0%B4%D1%80%D0%B8%D0%BA%D1%83">Верные Олдрику</a>».</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-26">
+                            <td class="text-center">
+                                <img class="rounded" alt="Location_Untended_Graves.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Location_Untended_Graves.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Заброшенные могилы</td>
+                            <td>Доберитесь до <a href="https://darksouls.fandom.com/ru/wiki/%D0%97%D0%B0%D0%B1%D1%80%D0%BE%D1%88%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB%D1%8B">Заброшенных могил</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-27">
+                            <td class="text-center">
+                                <img class="rounded" alt="Location_Archdragon_Peak.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Location_Archdragon_Peak.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Пик Архидракона</td>
+                            <td>Доберитесь до <a href="https://darksouls.fandom.com/ru/wiki/%D0%9F%D0%B8%D0%BA_%D0%94%D1%80%D0%B5%D0%B2%D0%BD%D0%B8%D1%85_%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%BE%D0%B2">пика Архидракона</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-28">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_Iudex_Gundyr.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_Iudex_Gundyr.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Судия Гундир</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%A1%D1%83%D0%B4%D0%B8%D1%8F_%D0%93%D1%83%D0%BD%D0%B4%D0%B8%D1%80">Судию Гундира</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-29">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_Vordt_of_the_Boreal_Valley.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_Vordt_of_the_Boreal_Valley.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Вордт из Холодной долины</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%92%D0%BE%D1%80%D0%B4%D1%82_%D0%B8%D0%B7_%D0%A5%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9_%D0%B4%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B">Вордта из Холодной долины</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-30">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_Curse-rotted_Greatwood.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_Curse-rotted_Greatwood.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Проклятое Великое древо</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%9F%D1%80%D0%BE%D0%BA%D0%BB%D1%8F%D1%82%D0%BE%D0%B5_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B5_%D0%B4%D1%80%D0%B5%D0%B2%D0%BE">Проклятое Великое древо</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-31">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_Crystal_Sage.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_Crystal_Sage.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Знаток кристальных чар</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%97%D0%BD%D0%B0%D1%82%D0%BE%D0%BA_%D0%BA%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85_%D1%87%D0%B0%D1%80">Знатока кристальных чар</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-32">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_Deacons_of_the_Deep.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_Deacons_of_the_Deep.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Дьяконы глубин</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%94%D1%8C%D1%8F%D0%BA%D0%BE%D0%BD%D1%8B_%D0%B3%D0%BB%D1%83%D0%B1%D0%B8%D0%BD">Дьяконов глубин</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-33">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_High_Lord_Wolnir.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_High_Lord_Wolnir.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Верховный повелитель Вольнир</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%92%D0%B5%D1%80%D1%85%D0%BE%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D0%B2%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%92%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D1%80">Верховного повелителя Вольнира</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-34">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_Pontiff_Sulyvahn.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_Pontiff_Sulyvahn.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Понтифик Саливан</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%9F%D0%BE%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA_%D0%A1%D0%B0%D0%BB%D0%B8%D0%B2%D0%B0%D0%BD">Понтифика Саливана</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-35">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_Dancer_of_the_Boreal_Valley.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_Dancer_of_the_Boreal_Valley.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Танцовщица Холодной долины</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%A2%D0%B0%D0%BD%D1%86%D0%BE%D0%B2%D1%89%D0%B8%D1%86%D0%B0_%D0%A5%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9_%D0%B4%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B">Танцовщицу Холодной долины</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-36">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_Dragonslayer_Armour.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_Dragonslayer_Armour.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Доспех Драконоборца</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%94%D0%BE%D1%81%D0%BF%D0%B5%D1%85%D0%B8_%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%BE%D0%B1%D0%BE%D1%80%D1%86%D0%B0">Доспех Драконоборца</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-37">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_Old_Demon_King.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_Old_Demon_King.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Старый король демонов</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%A1%D1%82%D0%B0%D1%80%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8C_%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2">Старого короля демонов</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-38">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_Oceiros,_the_Consumed_King.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_Oceiros,_the_Consumed_King.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Оцейрос, Снедаемый король</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%9E%D1%86%D0%B5%D0%B9%D1%80%D0%BE%D1%81,_%D0%A1%D0%BD%D0%B5%D0%B4%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8C">Оцейроса, Снедаемого короля</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-39">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_Champion_Gundyr.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_Champion_Gundyr.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Чемпион Гундир</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD_%D0%93%D1%83%D0%BD%D0%B4%D0%B8%D1%80">Чемпиона Гундира</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-40">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_Ancient_Wyvern.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_Ancient_Wyvern.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Древняя виверна</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%94%D1%80%D0%B5%D0%B2%D0%BD%D1%8F%D1%8F_%D0%B2%D0%B8%D0%B2%D0%B5%D1%80%D0%BD%D0%B0">Древнюю виверну</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-41">
+                            <td class="text-center">
+                                <img class="rounded" alt="Boss_The_Nameless_King.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Boss_The_Nameless_King.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Безымянный король</td>
+                            <td>Победите <a href="https://darksouls.fandom.com/ru/wiki/%D0%91%D0%B5%D0%B7%D1%8B%D0%BC%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BE%D0%BB%D1%8C">Безымянного короля</a>.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-42">
+                            <td class="text-center">
+                                <img class="rounded" alt="Enkindle.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Enkindle.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Зажечь костер</td>
+                            <td>Зажгите пламя <a href="https://darksouls.fandom.com/ru/wiki/%D0%9A%D0%BE%D1%81%D1%82%D0%B5%D1%80_(Dark_Souls_III)">костра</a> в первый раз.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="uncompleted" id="ds3_achievement-43">
+                            <td class="text-center">
+                                <img class="rounded" alt="Embrace_the_Flame.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/ds3/achievements/Embrace_the_Flame.png" decoding="async" width="64" height="64">
+                            </td>
+                            <td>Признать Пламя</td>
+                            <td>Станьте хозяином углей в первый раз.</td>
+                            <td class="text-center">
+                                <button class="mark-button rounded-border" onclick="mark_row(this, 0)"><img class="mark-image" alt="Mark_Dark_Sing.png" src="https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img/Mark_Dark_Sing.png"></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </main>
+
+        <footer class="container text-center">
+            <span><b>Dark Souls Achievements checklist by mirakzen</b></span><br>
+            <span>Версия 1.0 (Dark Souls III RUS)</span><br>
+        </footer>
+
+        <script src="../marking.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                show_stored_page_data("ds3", false, "achievement", 43, "", 0);
+            };
+        </script>
+    </body>
+</html>
