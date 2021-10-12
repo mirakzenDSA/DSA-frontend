@@ -201,3 +201,95 @@ function show_stored_page_data_cov(game, data, amount) {
     document.getElementById(counter1_id).textContent = count1;
     document.getElementById(counter2_id).textContent = count2;
 };
+
+
+function mark_row_quest(element) {
+    element_id = element.parentNode.parentNode.id;
+
+    table_id = element.parentNode.parentNode.parentNode.parentNode.id;
+    count_id = "counter" + table_id.slice(-1);
+    var count = parseInt(document.getElementById(count_id).innerHTML);
+
+    if ( document.getElementById(element_id).classList.contains('uncompleted') ) {
+        document.getElementById(element_id).className = "completed";
+        localStorage.setItem(element_id, 1);
+        count++;
+    } else {
+        document.getElementById(element_id).className = "uncompleted";
+        localStorage.removeItem(element_id);
+        count--;
+    }
+
+    document.getElementById(count_id).textContent = count;    
+};
+
+function show_stored_page_data_quest(game) {
+    var counter1_id = "counter1";
+    var count1 = 0;
+    var counter2_id = "counter2";
+    var count2 = 0;
+    var counter3_id = "counter3";
+    var count3 = 0;
+    var counter4_id = "counter4";
+    var count4 = 0;
+
+    for (var i = 1; i <= 11; i++) {
+        var id = game + "_questline_1-" + i;
+        var quest = localStorage.getItem(id);
+        if (quest == 1) {
+            document.getElementById(id).className = "completed";
+            count1++;
+        }
+    }
+    for (var i = 1; i <= 5; i++) {
+        var id = game + "_questline_2-" + i;
+        var quest = localStorage.getItem(id);
+        if (quest == 1) {
+            document.getElementById(id).className = "completed";
+            count2++;
+        }
+    }
+    for (var i = 1; i <= 4; i++) {
+        var id = game + "_questline_3-" + i;
+        var quest = localStorage.getItem(id);
+        if (quest == 1) {
+            document.getElementById(id).className = "completed";
+            count3++;
+        }
+    }
+    for (var i = 1; i <= 5; i++) {
+        var id = game + "_questline_4-" + i;
+        var quest = localStorage.getItem(id);
+        if (quest == 1) {
+            document.getElementById(id).className = "completed";
+            count4++;
+        }
+    }
+    document.getElementById(counter1_id).textContent = count1;
+    document.getElementById(counter2_id).textContent = count2;
+    document.getElementById(counter3_id).textContent = count3;
+    document.getElementById(counter4_id).textContent = count4;
+};
+
+
+function mark_person(element) {
+    element_id = element.parentNode.id;
+
+    if ( document.getElementById(element_id).classList.contains('uncompleted') ) {
+        document.getElementById(element_id).className = "completed text-center td-33 td-padding vert-align";
+        localStorage.setItem(element_id, 1);
+    } else {
+        document.getElementById(element_id).className = "uncompleted text-center td-33 td-padding vert-align";
+        localStorage.removeItem(element_id);
+    } 
+};
+
+function show_stored_page_data_person(game, data, amount) {
+    for (var i = 1; i <= amount; i++) {
+        var id = game + "_" + data + "-" + i;
+        var person = localStorage.getItem(id);
+        if (person == 1) {
+            document.getElementById(id).className = "completed text-center td-33 td-padding vert-align";
+        }
+    }
+};

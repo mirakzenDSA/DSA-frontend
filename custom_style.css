@@ -19,6 +19,7 @@ body {
 @media (max-width:899px) {
     .container {
         width: 100%;
+        min-width: 650px;
     }
 }
 
@@ -206,6 +207,10 @@ td.td-083 {
     padding-bottom: 0.5em;
 }
 
+td.vert-align {
+    vertical-align: top;
+}
+
 .mark {
     background: url("https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img//Mark_Dark_Sing.png");
     background-size: 64px;
@@ -223,6 +228,10 @@ td.td-083 {
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
     padding: 0;
+}
+
+.button-no-border {
+    border: none;
 }
 
 .mark-image {
@@ -268,19 +277,19 @@ button.double {
 /* Style the tab content */
 .tabcontent {
     display: none;
-    border-top: 2px solid #453a24;
+    border-top: 3px solid #453a24;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
 .table_info {
-    border-top: 2px solid #453a24;
+    border-top: 3px solid #453a24;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
 .paragraph-top-divider {
-    border-top: 2px solid #453a24;
+    border-top: 3px solid #453a24;
     width: 100%;
 }
 
@@ -290,4 +299,37 @@ img.vert-centered {
 
 .nowrap {
     white-space: nowrap;
+}
+
+.image-resizable {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width:1199px) {
+    .image-resizable {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width:1200px) {
+    .image-resizable {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width:1400px) {
+    .image-resizable {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width:1550px) {
+    .image-resizable {
+        width: 300px;
+        height: 300px;
+    }
 }
