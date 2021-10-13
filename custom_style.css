@@ -232,6 +232,8 @@ td.vert-align {
 
 .button-no-border {
     border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .mark-image {
@@ -299,11 +301,6 @@ img.vert-centered {
 
 .nowrap {
     white-space: nowrap;
-}
-
-.image-resizable {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
 @media (max-width:1199px) {
