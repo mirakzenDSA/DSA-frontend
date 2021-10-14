@@ -665,6 +665,7 @@
         <footer class="container text-center">
             <span><b>Dark Souls Achievements checklist by mirakzen</b></span><br>
             <span>Версия 1.0 (Dark Souls III RUS)</span><br>
+            <button class="text-button text-white" onclick="reset_storage()"><b>Сбросить прогресс</b></button>
         </footer>
 
         <script src="../marking.js"></script>
@@ -672,6 +673,9 @@
             window.onload = function() {
                 show_stored_page_data("ds3", false, "gesture", 33, "", 0);
             };
+        </script>
+        <script>
+            function reset_storage() { localStorage.clear(); };
         </script>
     </body>
 </html>

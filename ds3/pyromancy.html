@@ -948,8 +948,9 @@
         </main>
 
         <footer class="container text-center">
-            <span>DSA by mirakzen</span><br />
-            <span>Sources on <a href="https://github.com/mirakzen/DSA">GitHub</a></span>
+            <span><b>Dark Souls Achievements checklist by mirakzen</b></span><br>
+            <span>Версия 1.0 (Dark Souls III RUS)</span><br>
+            <button class="text-button text-white" onclick="reset_storage()"><b>Сбросить прогресс</b></button>
         </footer>
 
         <script src="../marking.js"></script>
@@ -957,6 +958,9 @@
             window.onload = function () {
                 show_stored_page_data("ds3", false, "pyromancy", 30, "pyromancy_tome", 5);
             };
+        </script>
+        <script>
+            function reset_storage() { localStorage.clear(); };
         </script>
     </body>
 </html>
