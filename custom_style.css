@@ -1,7 +1,7 @@
 body {
     height: 100%;
 
-    background-image: url("https://dsa-cdn.mirakzen.ru/img/background.jpg");
+    background-image: url("https://static.wikia.nocookie.net/darksouls/images/a/ad/Wiki-background-dark.jpg/revision/latest?format=original&path-prefix=ru");
     background-attachment: fixed;
     background-size: cover;
 
@@ -109,7 +109,7 @@ header {
 }
 
 .container-background {
-    background-image: url("https://dsa-cdn.mirakzen.ru/img/background_content.jpg");
+    background-image: url("https://static.wikia.nocookie.net/darksouls/images/1/19/Wiki-background-dark-center.jpg/revision/latest?format=original&path-prefix=ru");
     background-attachment: fixed;
     background-size: cover;
 }
