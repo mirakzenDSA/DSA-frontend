@@ -1,7 +1,7 @@
 body {
     height: 100%;
 
-    background-image: url("https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/q=100/ds/img/background.jpg");
+    background-image: url("https://cdn.statically.io/img/gcl-cdn.mirakzen.ru/q=100/ds/img/background.jpg");
     background-attachment: fixed;
     background-size: cover;
 
@@ -109,7 +109,7 @@ header {
 }
 
 .container-background {
-    background-image: url("https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/q=100/ds/img/background_content.jpg");
+    background-image: url("https://cdn.statically.io/img/gcl-cdn.mirakzen.ru/q=100/ds/img/background_content.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
