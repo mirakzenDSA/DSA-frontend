@@ -1,7 +1,7 @@
 body {
     height: 100%;
 
-    background-image: url("https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/q=100/img/background.jpg");
+    background-image: url("https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/q=100/ds/img/background.jpg");
     background-attachment: fixed;
     background-size: cover;
 
@@ -109,7 +109,7 @@ header {
 }
 
 .container-background {
-    background-image: url("https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/q=100/img/background_content.jpg");
+    background-image: url("https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/q=100/ds/img/background_content.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -212,7 +212,7 @@ td.vert-align {
 }
 
 .mark {
-    background: url("https://cdn.statically.io/img/dsa-cdn.mirakzen.ru/img//Mark_Dark_Sing.png");
+    background: url("https://cdn.statically.io/img/gcl-cdn.mirakzen.ru/ds/img/Mark_Dark_Sing.png");
     background-size: 64px;
     background-size: cover;
     width: 64px;
