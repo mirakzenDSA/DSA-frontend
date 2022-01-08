@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="ru" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Dark Souls Achievements checklist">
+        <meta name="author" content="Mir, mirakzen">
+
+        <title>DS1 TMP | DSA</title>
+        <link rel="shortcut icon" href="https://cdn.statically.io/img/gcl-cdn.mirakzen.ru/ds/img/Dark_Sign.png">
+
+        <style type="text/css">
+            body {
+                height: 100%;
+                font-size: 1rem;
+
+                font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+
+            .completed {
+                background: rgba(0, 255, 0, 0.2);
+            }
+
+            .uncompleted {
+                background: rgba(0, 0, 0, 0);
+            }
+
+            td {
+                padding: 0 1rem;
+            }
+        </style>
+
+    </head>
+
+    <body style="background-color: #000;">
+        <main style="color: #bdbebf;">
+            <h2>Ачивки</h2>
+            <table>
+                <tr id="tmpds1-1" class="uncompleted">
+                    <td>
+                        Тёмная Душа
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-2" class="uncompleted">
+                    <td>Привнести огонь</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-3" class="uncompleted">
+                    <td>Темный лорд</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-4" class="uncompleted">
+                    <td>Рыцарская честь</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-5" class="uncompleted">
+                    <td>Мудрость старца</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-6" class="uncompleted">
+                    <td>Узы пироманта</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-7" class="uncompleted">
+                    <td>Молитва девы</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-8" class="uncompleted">
+                    <td>Орден Белого Пути</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-9" class="uncompleted">
+                    <td>Орден Стража Принцессы</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-10" class="uncompleted">
+                    <td>Орден Клинка Темной Луны</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-11" class="uncompleted">
+                    <td>Орден Воина Света</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-12" class="uncompleted">
+                    <td>Орден Лесного Охотника</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-13" class="uncompleted">
+                    <td>Орден Темного Духа</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-14" class="uncompleted">
+                    <td>Орден Пути Дракона</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-15" class="uncompleted">
+                    <td>Орден Слуги Повелителя Могил</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-16" class="uncompleted">
+                    <td>Орден Слуг Хаоса</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-17" class="uncompleted">
+                    <td>Мощное оружие</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-18" class="uncompleted">
+                    <td>Оружие кристалла</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-19" class="uncompleted">
+                    <td>Оружие молнии</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-20" class="uncompleted">
+                    <td>Грубое оружие</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-21" class="uncompleted">
+                    <td>Оружие магии</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-22" class="uncompleted">
+                    <td>Оружие чар</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-23" class="uncompleted">
+                    <td>Оружие небес</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-24" class="uncompleted">
+                    <td>Оружие тайны</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-25" class="uncompleted">
+                    <td>Оружие огня</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-26" class="uncompleted">
+                    <td>Оружие хаоса</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-27" class="uncompleted">
+                    <td>Возжечь</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-28" class="uncompleted">
+                    <td>Фляга с Эстусом</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-29" class="uncompleted">
+                    <td>Прибыть в Лордран</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-30" class="uncompleted">
+                    <td>Колокол Пробуждения (Нежить)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-31" class="uncompleted">
+                    <td>Колокол Пробуждения (Квилег)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-32" class="uncompleted">
+                    <td>Обряд Возжигания</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-33" class="uncompleted">
+                    <td>Хождение над Бездной</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-34" class="uncompleted">
+                    <td>Достичь Анор-Лондо</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-35" class="uncompleted">
+                    <td>Великая Чаша</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-36" class="uncompleted">
+                    <td>Сразить Нито Повелителя Могил</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-37" class="uncompleted">
+                    <td>Сразить Ложе Хаоса</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-38" class="uncompleted">
+                    <td>Сразить Четырех Королей</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-39" class="uncompleted">
+                    <td>Сразить Нагого Сита</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-40" class="uncompleted">
+                    <td>Сразить Гвиндолина Темное Солнце</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-41" class="uncompleted">
+                    <td>Сразить Присциллу Полукровку</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+
+            <h2>Заклинания</h2>
+
+
+            <table>
+                <tr id="tmpds1-42" class="uncompleted">
+                    <td>Стрела души</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-43" class="uncompleted">
+                    <td>Тяжелая стрела души</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-44" class="uncompleted">
+                    <td>Большая стрела души</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-45" class="uncompleted">
+                    <td>
+                        Большая тяжелая стрела души
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-46" class="uncompleted">
+                    <td>
+                        Копье души
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-47" class="uncompleted">
+                    <td>
+                        Кристальное копье души
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-48" class="uncompleted">
+                    <td>
+                        Наводящийся сгусток души
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-49" class="uncompleted">
+                    <td>
+                        Кристальный сгусток души
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-50" class="uncompleted">
+                    <td>
+                        Исцеление
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-51" class="uncompleted">
+                    <td>
+                        Сопротивление проклятию
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-52" class="uncompleted">
+                    <td>
+                        Заклинание Света
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-53" class="uncompleted">
+                    <td>
+                        Незаметность
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-54" class="uncompleted">
+                    <td>
+                        Хамелеон
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-55" class="uncompleted">
+                    <td>
+                        Невидимое оружие
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-56" class="uncompleted">
+                    <td>
+                        Починка
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-57" class="uncompleted">
+                    <td>
+                        Щит магии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-58" class="uncompleted">
+                    <td>
+                        Крепкий щит магии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-59" class="uncompleted">
+                    <td>
+                        Оружие магии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-60" class="uncompleted">
+                    <td>
+                        Большое оружие магии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-61" class="uncompleted">
+                    <td>
+                        Кристальное оружие магии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-62" class="uncompleted">
+                    <td>
+                        Дыхание белого дракона
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-63" class="uncompleted">
+                    <td>
+                        Звуковая приманка
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-64" class="uncompleted">
+                    <td>
+                        Бесшумность
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-65" class="uncompleted">
+                    <td>
+                        Осторожное падение
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-66" class="uncompleted">
+                    <td>
+                        Шар Тьмы
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-67" class="uncompleted">
+                    <td>
+                        Туман Тьмы
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-68" class="uncompleted">
+                    <td>
+                        Сфера Тьмы
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-69" class="uncompleted">
+                    <td>
+                        Преследователи
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Пиромантия</h2>
+
+            <table>
+                <tr id="tmpds1-70" class="uncompleted">
+                    <td>
+                        Огненный шар
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-71" class="uncompleted">
+                    <td>
+                        Огненная сфера
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-72" class="uncompleted">
+                    <td>
+                        Большой огненный шар
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-73" class="uncompleted">
+                    <td>
+                        Большой огненный шар Хаоса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-74" class="uncompleted">
+                    <td>
+                        Огненный шторм
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-75" class="uncompleted">
+                    <td>
+                        Огненная буря
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-76" class="uncompleted">
+                    <td>
+                        Шторм Хаоса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-77" class="uncompleted">
+                    <td>
+                        Поджигание
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-78" class="uncompleted">
+                    <td>
+                        Мощное поджигание
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-79" class="uncompleted">
+                    <td>
+                        Огненная струя
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-80" class="uncompleted">
+                    <td>
+                        Кнут огня
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-81" class="uncompleted">
+                    <td>
+                        Огненный кнут Хаоса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-82" class="uncompleted">
+                    <td>
+                        Отравляющий туман
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-83" class="uncompleted">
+                    <td>
+                        Ядовитый туман
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-84" class="uncompleted">
+                    <td>
+                        Кислотная струя
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-85" class="uncompleted">
+                    <td>
+                        Сырая плоть
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-86" class="uncompleted">
+                    <td>
+                        Железная плоть
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-87" class="uncompleted">
+                    <td>
+                        Внутренняя сила
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-88" class="uncompleted">
+                    <td>
+                        Помощь нежити
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-89" class="uncompleted">
+                    <td>
+                        Черное пламя
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Чудеса</h2>
+
+            <table>
+                <tr id="tmpds1-90" class="uncompleted">
+                    <td>
+                        Лечение
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-91" class="uncompleted">
+                    <td>
+                        Слова мощного лечения
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-92" class="uncompleted">
+                    <td>
+                        Мощное лечение
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-93" class="uncompleted">
+                    <td>
+                        Успокаивающий Свет
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-94" class="uncompleted">
+                    <td>
+                        Восстановление
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-95" class="uncompleted">
+                    <td>
+                        Изобильный Свет
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-96" class="uncompleted">
+                    <td>
+                        Сила
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-97" class="uncompleted">
+                    <td>
+                        Силовая волна
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-98" class="uncompleted">
+                    <td>
+                        Гнев богов
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-99" class="uncompleted">
+                    <td>
+                        Волшебный барьер
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-100" class="uncompleted">
+                    <td>
+                        Большой волшебный барьер
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-101" class="uncompleted">
+                    <td>
+                        Возвращение
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-102" class="uncompleted">
+                    <td>
+                        Поиск помощи
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-103" class="uncompleted">
+                    <td>
+                        Медленная мирная прогулка
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-104" class="uncompleted">
+                    <td>
+                        Обет молчания
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-105" class="uncompleted">
+                    <td>
+                        Кармическая справедливость
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-106" class="uncompleted">
+                    <td>
+                        Клинок Темной Луны
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-107" class="uncompleted">
+                    <td>
+                        Клинок Света
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-108" class="uncompleted">
+                    <td>
+                        Копье молнии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-109" class="uncompleted">
+                    <td>
+                        Большое копье молнии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-110" class="uncompleted">
+                    <td>
+                        Копье Света
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-111" class="uncompleted">
+                    <td>
+                        Танец меча Нито
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-112" class="uncompleted">
+                    <td>
+                        Танец большого меча Нито
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Редкое Оружие</h2>
+
+            <table>
+                <tr>
+                    <th colspan="2">
+                        Из душ боссов
+                    </th>
+                </tr>
+                <tr id="tmpds1-113" class="uncompleted">
+                    <td>
+                        Рог лунной бабочки
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-114" class="uncompleted">
+                    <td>
+                        Щит с кристальным кольцом
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-115" class="uncompleted">
+                    <td>
+                        Яростный меч Квилег
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-116" class="uncompleted">
+                    <td>
+                        Клинок Хаоса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-117" class="uncompleted">
+                    <td>
+                        Проклятый меч Арториаса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-118" class="uncompleted">
+                    <td>
+                        Небесный меч Арториаса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-119" class="uncompleted">
+                    <td>
+                        Большой щит Арториаса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-120" class="uncompleted">
+                    <td>
+                        Топор голема
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-121" class="uncompleted">
+                    <td>
+                        Кулак из драконьей кости
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-122" class="uncompleted">
+                    <td>
+                        Коса отнятия жизни
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-123" class="uncompleted">
+                    <td>
+                        Копье Драконоборца
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-124" class="uncompleted">
+                    <td>
+                        Молот Смоуга
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-125" class="uncompleted">
+                    <td>
+                        Лук Темной Луны
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-126" class="uncompleted">
+                    <td>
+                        Железный посох Темной Луны
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-127" class="uncompleted">
+                    <td>
+                        Большой меч Великого Повелителя
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        Из хвостов
+                    </th>
+                </tr>
+                <tr id="tmpds1-128" class="uncompleted">
+                    <td>
+                        Меч дракона
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-129" class="uncompleted">
+                    <td>
+                        Большая секира Короля Драконов
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-130" class="uncompleted">
+                    <td>
+                        Кинжал Присциллы
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-131" class="uncompleted">
+                    <td>
+                        Большой лунный меч
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-132" class="uncompleted">
+                    <td>
+                        Большой меч дракона
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-133" class="uncompleted">
+                    <td>
+                        Хвост-топор
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        Из ковенантов
+                    </th>
+                </tr>
+                <tr id="tmpds1-134" class="uncompleted">
+                    <td>
+                        Меч Повелителя Могил
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-135" class="uncompleted">
+                    <td>
+                        Темная Рука (также можно выбить из Темного духа)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        Из мобов
+                    </th>
+                </tr>
+                <tr id="tmpds1-136" class="uncompleted">
+                    <td>
+                        Щит с эмблемой
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-137" class="uncompleted">
+                    <td>
+                        Каменный большой меч
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-138" class="uncompleted">
+                    <td>
+                        Каменный большой щит
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-139" class="uncompleted">
+                    <td>
+                        Серебряный прямой меч
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-140" class="uncompleted">
+                    <td>
+                        Копье Серебряного Рыцаря
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-141" class="uncompleted">
+                    <td>
+                        Щит Серебряного Рыцаря
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-142" class="uncompleted">
+                    <td>
+                        Меч Черного Рыцаря
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-143" class="uncompleted">
+                    <td>
+                        Большой меч Черного Рыцаря
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-144" class="uncompleted">
+                    <td>
+                        Большая секира Черного Рыцаря
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-145" class="uncompleted">
+                    <td>
+                        Алебарда Черного Рыцаря
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-146" class="uncompleted">
+                    <td>
+                        Щит Черного Рыцаря
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-147" class="uncompleted">
+                    <td>
+                        Спиритический трезубец
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-148" class="uncompleted">
+                    <td>
+                        Полукруглый топор
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-149" class="uncompleted">
+                    <td>
+                        Великанская алебарда
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-150" class="uncompleted">
+                    <td>
+                        Рикардова рапира
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-151" class="uncompleted">
+                    <td>
+                        Посох Изалита
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-152" class="uncompleted">
+                    <td>
+                        Посох Демона
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        Из фантомов
+                    </th>
+                </tr>
+                <tr id="tmpds1-153" class="uncompleted">
+                    <td>
+                        Грант
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-154" class="uncompleted">
+                    <td>
+                        Санктус
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        Из сундуков и трупов
+                    </th>
+                </tr>
+                <tr id="tmpds1-155" class="uncompleted">
+                    <td>
+                        Щит с эмблемой дракона
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-156" class="uncompleted">
+                    <td>
+                        Асторский прямой меч
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-157" class="uncompleted">
+                    <td>
+                        Большой щит Хавела
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-158" class="uncompleted">
+                    <td>
+                        Зуб Дракона
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-159" class="uncompleted">
+                    <td>
+                        Большой лук драконоборца
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-160" class="uncompleted">
+                    <td>
+                        Рапира Велки
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-161" class="uncompleted">
+                    <td>
+                        Кровавый щит
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-162" class="uncompleted">
+                    <td>
+                        Резной щит
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-163" class="uncompleted">
+                    <td>
+                        Черный щит
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Ковенанты</h2>
+
+            <table>
+                <tr id="tmpds1-164" class="uncompleted">
+                    <td>
+                        Орден Белого Пути -> ничего (Петрус)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-165" class="uncompleted">
+                    <td>
+                        Орден Стража Принцессы -> ничего
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-166" class="uncompleted">
+                    <td>
+                        Орден Клинка Темной Луны -> 10 знаков возмездия
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-167" class="uncompleted">
+                    <td>
+                        Орден Воина Света -> 25 веры и 10 медалей + душа гвина
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-168" class="uncompleted">
+                    <td>
+                        Орден Лесного Охотника -> ничего (шива и закупиться)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-169" class="uncompleted">
+                    <td>
+                        Орден Темного Духа -> 0 уровень ради тёмной руки
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-170" class="uncompleted">
+                    <td>
+                        Орден Пути Дракона -> ничего
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-171" class="uncompleted">
+                    <td>
+                        Орден Слуги Повелителя Могил -> 10 глаз
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-172" class="uncompleted">
+                    <td>
+                        Орден Слуг Хаоса -> 30 человечности
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Угли</h2>
+
+            <table>
+                <tr id="tmpds1-173" class="uncompleted">
+                    <td>
+                        Большой уголь -> +10 и грубое
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-174" class="uncompleted">
+                    <td>
+                        Очень большой уголь -> +15
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-175" class="uncompleted">
+                    <td>
+                        Кристальный уголь
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-176" class="uncompleted">
+                    <td>
+                        Большой волшебный уголь
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-177" class="uncompleted">
+                    <td>
+                        Зачарованный уголь
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-178" class="uncompleted">
+                    <td>
+                        Небесный уголь
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-179" class="uncompleted">
+                    <td>
+                        Большой небесный уголь
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-180" class="uncompleted">
+                    <td>
+                        Уголь Тьмы
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-181" class="uncompleted">
+                    <td>
+                        Большой огненный уголь
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-182" class="uncompleted">
+                    <td>
+                        Огненный уголь Хаоса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Квест Реи</h2>
+
+            <table>
+                <tr id="tmpds1-183" class="uncompleted">
+                    <td>
+                        Поговорить в храме огня
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-184" class="uncompleted">
+                    <td>
+                        Спасти в катакомбах
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-185" class="uncompleted">
+                    <td>
+                        Скупить всё сразу после в церкви города нежити
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-186" class="uncompleted">
+                    <td>
+                        Убить в тюрьме ахривов
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Квест Квиланы</h2>
+
+            <table>
+                <tr id="tmpds1-187" class="uncompleted">
+                    <td>
+                        ДО УБИЙСТВА ЛОЖЕ ХАОСА вкачать перчатку до +10 и найти на болтах чумного города
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-188" class="uncompleted">
+                    <td>
+                        Скупить всё кроме одного заклинания
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-189" class="uncompleted">
+                    <td>
+                        Говорить до упора
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-190" class="uncompleted">
+                    <td>
+                        Убить ложе хаоса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-191" class="uncompleted">
+                    <td>
+                        Закупить последнее заклинание и получить "подарок"
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Квест Сигмайера</h2>
+
+            <table>
+                <tr id="tmpds1-192" class="uncompleted">
+                    <td>
+                        Поговорить перед крепостью Сена
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-193" class="uncompleted">
+                    <td>
+                        Поговорить внутри крепости
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-194" class="uncompleted">
+                    <td>
+                        Развалить рыцарей и поговорить а Анор Лондо
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-195" class="uncompleted">
+                    <td>
+                        Ответить "ДА" в храме огня и залутать чудо "Силовая волна"
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-196" class="uncompleted">
+                    <td>
+                        Дать 3 фиолетового мха в чумном городе
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-197" class="uncompleted">
+                    <td>
+                        Сказать "ДА" дочери после освобождения из голема перед кристальным гротом
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-198" class="uncompleted">
+                    <td>
+                        Не дать умереть от мобов в болоте Изалита (нельзя убивать всех до прыжка тоже)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-199" class="uncompleted">
+                    <td>
+                        Поговорить с дочкой в Храме Огня
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-200" class="uncompleted">
+                    <td>
+                        Найти у костра в Озере Золы
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Квест Логана</h2>
+
+            <table>
+                <tr id="tmpds1-201" class="uncompleted">
+                    <td>
+                        Спасти ученика в нижней части города нежити
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-202" class="uncompleted">
+                    <td>
+                        Спасти Логана в крепости Сена
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-203" class="uncompleted">
+                    <td>
+                        Поговорить и дать уйти в Храме Огня
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-204" class="uncompleted">
+                    <td>
+                        Найти и освободить Логана в тюрьме Архива
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-205" class="uncompleted">
+                    <td>
+                        Скупить все заклинания до убийства Сита
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-206" class="uncompleted">
+                    <td>
+                        Убить в месте первого сражения с Ситом и забрать вещи с него и с сундука
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Квест Санбро (Солер)</h2>
+
+            <table>
+                <tr id="tmpds1-212" class="uncompleted">
+                    <td>
+                        Поговорить перед виверной в городе нежити
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-213" class="uncompleted">
+                    <td>
+                        Поговорить в Анор Лондо
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-214" class="uncompleted">
+                    <td>
+                        Поговорить у Алтаря Света под виверной
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-215" class="uncompleted">
+                    <td>
+                        Открыть срез у прекрасной госпожи и залутать личинку света ДО УБИЙСТВА ДЕМОНА СТОНОГА
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-216" class="uncompleted">
+                    <td>
+                        Убить демона и поговорить за ареной босса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-217" class="uncompleted">
+                    <td>
+                        Поговорить на месте убийства личинки света
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Персонажи</h2>
+
+            <table>
+                <tr id="tmpds1-207" class="uncompleted">
+                    <td>
+                        Освободить дефолтного пироманта и закупиться
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-208" class="uncompleted">
+                    <td>
+                        Освободить Зарю из голема за гидрой и закупиться
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-209" class="uncompleted">
+                    <td>
+                        Заразиться яйцом и закупиться у Энги (прекрасная госпожа)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-210" class="uncompleted">
+                    <td>
+                        Закупиться у Освальда (отпускает грехи где были гаргульи)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-211" class="uncompleted">
+                    <td>
+                        До победы над Нито быть в человеческой форме и убить фантома Лироя в месте с видом на Озеро Золы
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+        </main>
+
+        <script>
+            function reset_storage() { localStorage.clear(); };
+
+            function mark_row(button) {
+                element_id = button.parentNode.parentNode.id;
+                element = document.getElementById(element_id);
+
+                if ( element.classList.contains('uncompleted') ) {
+                    element.className = "completed";
+                    localStorage.setItem(element_id, 1);
+                } else {
+                    element.className = "uncompleted";
+                    localStorage.removeItem(element_id);
+                }
+            }
+
+            window.onload = function () {
+                for (var i = 1; i <= 41; i++) {
+                    var id = "tmpds1-" + i;
+                    var item = localStorage.getItem(id);
+
+                    if (item) {
+                        document.getElementById(id).className = "completed";
+                    }
+                }
+            };
+        </script>
+    </body>
+</html>

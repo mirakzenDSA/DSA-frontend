@@ -16,23 +16,35 @@
         <header class="container container-flex">
             <a class="navbar-brand" href="/">DSA</a>
             <div class="element-center">
-                <a class="navbar-link">Dark Souls</a>
+                <a class="navbar-link" href="../ds1/index.html">Dark Souls</a>
                 <a class="navbar-link">Dark Souls II</a>
                 <a class="navbar-link" href="../ds3/index.html">Dark Souls III</a>
             </div>
-            <a class="navbar-brand" href="../index_en.html">En</a>
+            <a class="navbar-brand">En</a>
         </header>
 
         <main class="container container-background rounded-border">
             <div class="container-margin">
-                <h1 class="text-center">Dark Souls<br>Achievements</h1>
-                
+                <h1 class="text-center">Dark Souls I</h1>
+
+                <h2 class="text-center">Доступные страницы</h2>
+
+
+                <div class="paragraph-top-divider">
+                    <h2 class="text-center">Общие рекомендации и замечания<br>(Основано на собственном опыте собирания достижений)</h2>
+                </div>
+
             </div>
         </main>
 
         <footer class="container text-center">
             <span><b>Dark Souls Achievements checklist by mirakzen</b></span><br>
-            <span>Версия 1.0 (Dark Souls III RUS)</span><br>
+            <span>Версия 0.2.0 (Dark Souls III RUS + Start DS1 RUS)</span><br>
+            <button class="text-button text-white" onclick="reset_storage()"><b>Сбросить прогресс</b></button>
         </footer>
+
+        <script>
+            function reset_storage() { localStorage.clear(); };
+        </script>
     </body>
 </html>
