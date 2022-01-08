@@ -35,7 +35,7 @@
                 border-collapse: collapse;
             }
 
-            table {
+            table, .cntr {
                 float: center;
                 margin-left: auto;
                 margin-right: auto;
@@ -1798,8 +1798,16 @@
             </table>
         </main>
 
+        <div class="cntr" style="text-align: center; margin-top: 2rem; margin-bottom: 1rem;">
+            <button onclick="reset_storage()"><b>Сбросить прогресс</b></button>
+        </div>
+        
+
         <script>
-            function reset_storage() { localStorage.clear(); };
+            function reset_storage() {
+                localStorage.clear();
+                document.location.reload();
+            };
 
             function mark_row(button) {
                 element_id = button.parentNode.parentNode.id;
