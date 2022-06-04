@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="ru" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Dark Souls Achievements checklist">
+        <meta name="author" content="Mir, mirakzen">
+
+        <title>DS1 TMP | DSA</title>
+        <link rel="shortcut icon" href="https://cdn.statically.io/img/gcl-cdn.mirakzen.ru/ds/img/Dark_Sign.png">
+
+        <style type="text/css">
+            body {
+                margin: 0;
+                height: 100%;
+                font-size: 1rem;
+
+                font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+
+            .completed {
+                background: rgba(0, 255, 0, 0.2);
+            }
+
+            .uncompleted {
+                background: rgba(0, 0, 0, 0);
+            }
+
+            td {
+                padding: 0 1rem;
+            }
+
+            table, th, td {
+                border: 1px solid #575757;
+                border-collapse: collapse;
+            }
+
+            table, .cntr {
+                float: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+        </style>
+
+    </head>
+
+    <body style="background-color: #000;">
+        <main style="color: #bdbebf;">
+            <h2>Ачивки (38)</h2>
+            <table>
+                <tr id="tmpds2-1" class="uncompleted">
+                    <td>
+                        Тёмная Душа
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-2" class="uncompleted">
+                    <td>Воспоминание о себе</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-3" class="uncompleted">
+                    <td>Королевское кольцо</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-4" class="uncompleted">
+                    <td>Древний Дракон</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-5" class="uncompleted">
+                    <td>Наследник трона</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-6" class="uncompleted">
+                    <td>Последний Гигант</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-7" class="uncompleted">
+                    <td>Костер грешницы</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-8" class="uncompleted">
+                    <td>Костер Железной цитадели</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-9" class="uncompleted">
+                    <td>Костер Расселины</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-10" class="uncompleted">
+                    <td>Костер Брайтстоуна</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-11" class="uncompleted">
+                    <td>Зеркальный Рыцарь</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-12" class="uncompleted">
+                    <td>Вендрик</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-13" class="uncompleted">
+                    <td>Могучее оружие (Усильте оружие до максимума)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-14" class="uncompleted">
+                    <td>Мастер жестов</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-15" class="uncompleted">
+                    <td>Магистр волшебства</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-16" class="uncompleted">
+                    <td>Магистр чудес</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-17" class="uncompleted">
+                    <td>Магистр пиромантии</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-18" class="uncompleted">
+                    <td>Магистр порчи</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-19" class="uncompleted">
+                    <td>Ковенант Наследников Солнца (Блестящий ковенант)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-20" class="uncompleted">
+                    <td>Ковенант Синих Стражей (Ковенант защитников)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-21" class="uncompleted">
+                    <td>Ковенант Братства Крови (Кровавый ковенант)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-22" class="uncompleted">
+                    <td>Ковенант Лазурного Пути (Смиренный ковенант)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-23" class="uncompleted">
+                    <td>Ковенант Крысиного Короля (Ковенант грызунов)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-24" class="uncompleted">
+                    <td>Ковенант Звонарей (Звенящий ковенант)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-25" class="uncompleted">
+                    <td>Ковенант Реликвий Дракона (Ковенант Древних)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-26" class="uncompleted">
+                    <td>Ковенант Отряда Чемпионов (Ковенант сильнейших)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-27" class="uncompleted">
+                    <td>Ковенант Пилигримов Тьмы (Ковенант бездны)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-28" class="uncompleted">
+                    <td>Самоотверженный даритель (Доведите преданность ордену до максимума)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-29" class="uncompleted">
+                    <td>Любопытная карта (Зажгите все огни на карте в Маджуле)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-30" class="uncompleted">
+                    <td>Смена костюма (Дайте Розабет из Мельфии какую-нибудь одежду)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-31" class="uncompleted">
+                    <td>Сбор изгнанников (Увеличьте население Маджулы)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-32" class="uncompleted">
+                    <td>Меч лунного света (Получите снаряжение Бенхарта из Джуго)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-33" class="uncompleted">
+                    <td>Защитник форта (Получите снаряжение капитана Драммонда)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-34" class="uncompleted">
+                    <td>Лукатиэль (Получите снаряжение Лукатиэль из Мирры)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-35" class="uncompleted">
+                    <td>Кузнец на всю жизнь (Получить снаряжение МакДаффа "Твердой Руки")</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-36" class="uncompleted">
+                    <td>Болтливый скупец (Получите снаряжение лестничего Гиллигана)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-37" class="uncompleted">
+                    <td>Воспоминания о расчленении (Получите снаряжение Вождя Венгарла)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-38" class="uncompleted">
+                    <td>Это Dark Souls (Погибните в первый раз)</td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+
+            <h2>Жесты (20)</h2>
+
+
+            <table>
+                <tr id="tmpds2-39" class="uncompleted">
+                    <td>
+                        <b>Указать</b> — начальный жест
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-40" class="uncompleted">
+                    <td>
+                        <b>Я не кусаюсь</b> — начальный жест
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-41" class="uncompleted">
+                    <td>
+                        <b>Поклон</b> — начальный жест
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-42" class="uncompleted">
+                    <td>
+                        <b>Помахать</b> — начальный жест
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-43" class="uncompleted">
+                    <td>
+                        <b>Я на взводе</b> — начальный жест
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-44" class="uncompleted">
+                    <td>
+                        <b>Боевой клич</b> — начальный жест
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-45" class="uncompleted">
+                    <td>
+                        <b>Хорошо!</b> — начальный жест
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-46" class="uncompleted">
+                    <td>
+                        <b>Ни за что</b> — начальный жест
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-47" class="uncompleted">
+                    <td>
+                        <b>Восславь Солнце!</b> — вступите в ковенант Наследников Солнца
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-48" class="uncompleted">
+                    <td>
+                        <b>Обезглавливание</b> — прослушайте все диалоги головы Венгарла в Темнолесье
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-49" class="uncompleted">
+                    <td>
+                        <b>Сжалься</b> — прослушайте диалоги Агдейна, Хранителя склепа в Склепе Нежити
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-50" class="uncompleted">
+                    <td>
+                        <b>Упасть ниц</b> — необходимо потратить у Гиллигана 2,000 душ
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-51" class="uncompleted">
+                    <td>
+                        <b>Насмешка</b> — освободите Стрейда от окаменения и побеседуйте с ним в Забытой Крепости
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-52" class="uncompleted">
+                    <td>
+                        <b>Позволь мне</b> — поговорите с призраком Канцлера Велладжера на лестнице при входе в Замок Дранглик
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-53" class="uncompleted">
+                    <td>
+                        <b>Ура!</b> — поговорите с капитаном Драммондом в Воспоминаниях Ваммара
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-54" class="uncompleted">
+                    <td>
+                        <b>Разогрев</b> — поговорите с Тарком, надев Кольцо шепота, после убийства босса локации Темнолесье
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-55" class="uncompleted">
+                    <td>
+                        <b>Дуэльный поклон</b> — получите Знак Верности и вступите у Таргрея в ковенант Синих Стражей
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-56" class="uncompleted">
+                    <td>
+                        <b>Да!</b> — в Роще Охотника найдете ключ от клетки, за которой располагается костер Тюрьма Нежити, где сидит Крейтон Скиталец - побеседуйте с ним
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-57" class="uncompleted">
+                    <td>
+                        <b>Приветствие</b> — в Маджуле на возвышенности сидит Унылый Солден, после диалогов с ним выучите жест
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-58" class="uncompleted">
+                    <td>
+                        <b>Радость</b> — поговорите с Бенхартом из Джуго после освобождения Розабет
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+
+            <h2>Волшебство (29+2)</h2>
+
+
+            <table>
+                <tr id="tmpds1-59" class="uncompleted">
+                    <td>
+                        <b>Стрела души</b> - купить где угодно
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-60" class="uncompleted">
+                    <td>
+                        <b>Большая стрела души</b> - купить или в Лесу Павших Гигантов в комнате с баллистами
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-61" class="uncompleted">
+                    <td>
+                        <b>Тяжелая стрела души</b> - купить где угодно
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-62" class="uncompleted">
+                    <td>
+                        <b>Большая тяжелая стрела души</b> - купить, искать в Земляном Пике не будем
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-63" class="uncompleted">
+                    <td>
+                        <b>Наводящаяся стрела души</b> - продают "душнилы"
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-64" class="uncompleted">
+                    <td>
+                        <b>Тяжелая наводящаяся стрела души</b> - Обмен Души стража руин у Стрэйда
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-65" class="uncompleted">
+                    <td>
+                        <b>Наводящийся сгусток души</b> - купить у Орнифекс или в Темнолесье в сундуке рядом с дедом пилигриммом
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-66" class="uncompleted">
+                    <td>
+                        <b>Кристальный наводящийся сгусток души</b> - В Храме Аманы возле 3-его костра, в воде на краю пропасти
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-67" class="uncompleted">
+                    <td>
+                        <b>Копье души</b> - купить у Ангейда или найти в Роще Охотника в клетке, в которую нужно спрыгнуть
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-68" class="uncompleted">
+                    <td>
+                        <b>Кристальное копье души</b> - Обмен Души бледного дракона (Фрея нг+) у Стрэйда
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-69" class="uncompleted">
+                    <td>
+                        <b>Ударная волна</b> - купить у Кархиллиона Фолда
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-70" class="uncompleted">
+                    <td>
+                        <b>Залп копьями души</b> - купить у Кархиллиона Фолда
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-71" class="uncompleted">
+                    <td>
+                        <b>Град душ</b> - Обмен Души скорпиона Нажки у Стрэйда
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-72" class="uncompleted">
+                    <td>
+                        <b>Большой меч душ</b> - в Замке Дранглик в сундуке за Гигантом для вертикального лифта
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-73" class="uncompleted">
+                    <td>
+                        <b>Вихрь душ</b> - купить у Ангейда или найти в Маджуле в дыре за дверью где ещё ключ в длц или в Бухте рядом с Орнифекс в комнате
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-74" class="uncompleted">
+                    <td>
+                        <b>Снаряд души</b> - В Замке Дранглик, за Зеркальным рыцарем, в сундуке, слева от лифта к Храму Аманы
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-75" class="uncompleted">
+                    <td>
+                        <b>Гейзер душ</b> - В Цитадели Алдии рядом со вторым костром в клетке с жижей и псами
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-76" class="uncompleted">
+                    <td>
+                        <b>Волшебное оружие</b> - купить у Кархиллиона Фолда
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-77" class="uncompleted">
+                    <td>
+                        <b>Большое волшебное оружие</b> - купить у Навлана или найти в Чёрной Расселине рядом с первым костром в сундуке
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-78" class="uncompleted">
+                    <td>
+                        <b>Кристальное волшебное оружие</b> - В Храме Дракона после драконьего яйца аккуратно спрыгнуть вниз к сундуку
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-79" class="uncompleted">
+                    <td>
+                        <b>Крепкий волшебный щит</b> - в Замке Дранглик вверху в сундуке у запертой Мильфанито
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-80" class="uncompleted">
+                    <td>
+                        <b>Стремление</b> - купить у Кархиллиона Фолда
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-81" class="uncompleted">
+                    <td>
+                        <b>Бесшумность</b> - В Забытой Крепости после победы над Стражами Руин лутаем скрытые комнаты
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-82" class="uncompleted">
+                    <td>
+                        <b>Осторожное падение</b> - купить
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-83" class="uncompleted">
+                    <td>
+                        <b>Невидимое оружие</b> - 2 ранг в ковенанте Хранители Колокола (30)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-84" class="uncompleted">
+                    <td>
+                        <b>Починка</b> - SotFS - в Темнолесье железном сундуке за окаменевшим львиным воином с правой стороны от прохода к Полускорпиону Тарку
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-85" class="uncompleted">
+                    <td>
+                        <b>Заклинание Света</b> - купить у Стрэйда или деда-пилигрима
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-86" class="uncompleted">
+                    <td>
+                        <b>Хамелеон</b> - в Долине Жатвы от второго костра в яде где бродят два великана
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-87" class="uncompleted">
+                    <td>
+                        <b>Выплеск магии</b> - даст Навлаан за перо
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="text-center">
+                        DLC Crown of the Sunken King
+                    </th>
+                </tr>
+                <tr id="tmpds1-88" class="uncompleted">
+                    <td>
+                        <b>Сфокусированные души</b> - в Шульве перед мостом где пролетает дракон есть путь вправо
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="text-center">
+                        DLC Crown of the Ivory King
+                    </th>
+                </tr>
+                <tr id="tmpds1-89" class="uncompleted">
+                    <td>
+                        <b>Вспышка души</b> - в Ледяной Элеум Лойс лежит за залоченым лифтом в самом начале локи
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+
+            <h2>Чудеса (26+2)</h2>
+
+
+            <table>
+                <tr id="tmpds1-90" class="uncompleted">
+                    <td>
+                        <b>Лечение</b> - купить
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-91" class="uncompleted">
+                    <td>
+                        <b>Среднее лечение</b> - купить у Лисии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-92" class="uncompleted">
+                    <td>
+                        <b>Слова мощного лечения</b> - купить у Лисии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-93" class="uncompleted">
+                    <td>
+                        <b>Мощное лечение</b> - купить у Кромвеля или найти перед входом в помойку где нападают мумии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-94" class="uncompleted">
+                    <td>
+                        <b>Успокаивающий Свет</b> - Выпадает из Лисии, если воспользоваться Разбитым оком рядом с ней и убить её
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-95" class="uncompleted">
+                    <td>
+                        <b>Восстановление</b> - купить
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-96" class="uncompleted">
+                    <td>
+                        <b>Сияние жизни</b> - купить
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-97" class="uncompleted">
+                    <td>
+                        <b>Изобильный Свет</b> - Канцлер Велладжер (нг++)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-98" class="uncompleted">
+                    <td>
+                        <b>Утешительная молитва</b> - купить
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-99" class="uncompleted">
+                    <td>
+                        <b>Сила</b> - купить
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-100" class="uncompleted">
+                    <td>
+                        <b>Гнев богов</b> - Канцлер Велладжер (нг++)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-101" class="uncompleted">
+                    <td>
+                        <b>Силовая волна</b> - купить или найти в Безлюдной Пристани наверху перед зданием со сталкерами
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-102" class="uncompleted">
+                    <td>
+                        <b>Небесный гром</b> - купить
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-103" class="uncompleted">
+                    <td>
+                        <b>Копье молнии</b> - купить у Лисии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-104" class="uncompleted">
+                    <td>
+                        <b>Большое копье молнии</b> - купить у Стрэйда или найти в Маджуле в дыре за дверью где ещё ключ в длц
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-105" class="uncompleted">
+                    <td>
+                        <b>Копье Света</b> - Выдаётся при получении 3 ранга в ковенанте Наследники Солнца
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-106" class="uncompleted">
+                    <td>
+                        <b>Упокоение души</b> - купить
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-107" class="uncompleted">
+                    <td>
+                        <b>Слепящий заряд</b> - Обмен Души старого короля (нг+) у Стрэйда из Олафиса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-108" class="uncompleted">
+                    <td>
+                        <b>Магический барьер</b> - купить
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-109" class="uncompleted">
+                    <td>
+                        <b>Большой магический барьер</b> - купить у канцлера Велладжера или найти в Цитадели Алдии, сундук прямо над Наавланом
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-110" class="uncompleted">
+                    <td>
+                        <b>Возвращение</b> - купить у Лисии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-111" class="uncompleted">
+                    <td>
+                        <b>Проводник</b> - купить у Лисии
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-112" class="uncompleted">
+                    <td>
+                        <b>Священный обет</b> - Обмен Души Вельстадта у Стрэйда из Олафиса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-113" class="uncompleted">
+                    <td>
+                        <b>Снять покров</b> - купить у Стрэйда
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-114" class="uncompleted">
+                    <td>
+                        <b>Непоколебимость</b> - купить у Кромвеля
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-115" class="uncompleted">
+                    <td>
+                        <b>Клинок Света</b> - купить у Стрэйда или найти в Храме Аманы за вторым костром за Огром на узкой тропинке
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="text-center">
+                        DLC Crown of the Sunken King
+                    </th>
+                </tr>
+                <tr id="tmpds1-116" class="uncompleted">
+                    <td>
+                        <b>Отрицание</b> - внутри Святилища дракона за круглой дверью возле шипов и костра
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="text-center">
+                        DLC Crown of the Ivory King
+                    </th>
+                </tr>
+                <tr id="tmpds1-117" class="uncompleted">
+                    <td>
+                        <b>Копье пронзающей молнии</b> - в Ледяной Элеум Лойс лежит в башне с невидимой в бурю лестницей
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+
+            <h2>Пиромантия (21+3)</h2>
+
+
+            <table>
+                <tr id="tmpds1-118" class="uncompleted">
+                    <td>
+                        <b>Огненный шар</b> - купить у Розабет из Мельфии или гриндить с саламандр или найти в Безлюдной пристани после победы над Гибким часовым
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-119" class="uncompleted">
+                    <td>
+                        <b>Огненная сфера</b> - купить у Розабет из Мельфии или гриндить с саламандр
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-120" class="uncompleted">
+                    <td>
+                        <b>Большой огненный шар</b> - гриндить с саламандр или найти в Бухте в комнате здания с павуками (ключ дропает герцог)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-121" class="uncompleted">
+                    <td>
+                        <b>Большой огненный шар Хаоса</b> - Канцлер Велладжер (нг++)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-122" class="uncompleted">
+                    <td>
+                        <b>Огненный Шторм</b> - купить у Малютки Грена или найти в Замке Дранглик на балконе в большом зале, после голема, который активирует лифт 
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-123" class="uncompleted">
+                    <td>
+                        <b>Огненная буря</b> - найти в Храме Аманы после второго костра у хижины в сундуке рядом с проклинающими урнами
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-124" class="uncompleted">
+                    <td>
+                        <b>Шторм Хаоса</b> - найти в Железной Цитадели после второго костра в комнате с опускающейся платформой сундуке в конце дорожки из застывшей лавы
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-125" class="uncompleted">
+                    <td>
+                        <b>Поджигание</b> - купить у Розабет или найти в Роще на оторваном висячем мосту со стороны скелетов и некромантов перед боссом
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-126" class="uncompleted">
+                    <td>
+                        <b>Мощное поджигание</b> - купить у Малютки Грена или найти перед главным входом в Замок Дранглик справа в сундуке
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-127" class="uncompleted">
+                    <td>
+                        <b>Кнут огня</b> - купить у Малютки Грена или нагриндить в Башне Солнца с хранителей колокола
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-128" class="uncompleted">
+                    <td>
+                        <b>Отравляющий туман</b> - купить у Розабет
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-129" class="uncompleted">
+                    <td>
+                        <b>Ядовитый туман</b> - Обмен Души бойца крысиной гвардии у Стрэйда из Олафиса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-130" class="uncompleted">
+                    <td>
+                        <b>Кислотная струя</b> - Обмен Души крысиного командира у Стрэйда из Олафиса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-131" class="uncompleted">
+                    <td>
+                        <b>Недвижимое пламя</b> - купить у Стрэйда или дропнуть с Тюремщиков в Забытой крепости
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-132" class="uncompleted">
+                    <td>
+                        <b>Покров пламени</b> - купить у Стрэйда или нагриндить в Башне Солнца с хранителей колокола
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-133" class="uncompleted">
+                    <td>
+                        <b>Запретное солнце</b> - SotFS - купить у Навлаана после всех квестов
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-134" class="uncompleted">
+                    <td>
+                        <b>Огненное оружие</b> - Обмен на Душу Старой Ведьмы (нг+) у Стрэйд из Олафиса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-135" class="uncompleted">
+                    <td>
+                        <b>Сырая плоть</b> - купить у Розабет
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-136" class="uncompleted">
+                    <td>
+                        <b>Железная плоть</b> - купить у Розабет
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-137" class="uncompleted">
+                    <td>
+                        <b>Теплота</b> - купить у Ангейна или дропнуть с крыс в Могиле Святых
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-138" class="uncompleted">
+                    <td>
+                        <b>Всесожжение</b> - найти в Башне Солднца в сундуке в самом конце пробежки по локе
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="text-center">
+                       DLC Crown of the Old Iron King
+                    </th>
+                </tr>
+                <tr id="tmpds1-139" class="uncompleted">
+                    <td>
+                        <b>Вопль</b> - Обмен души Надалии (собирается из 12 фрагментов) у Стрейда из Олафиса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-140" class="uncompleted">
+                    <td>
+                        <b>Огненный танец</b> - найти в Мглистой Башне в комнате ниже первого костра около Пепельного Идола, который находится перед воротами, открываемыми рычагом
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds1-141" class="uncompleted">
+                    <td>
+                        <b>Огненная змея</b> - найти в Мглистой Башне около третьего костра за закрытой дверью
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <h2>Ковенанты</h2>
+
+            <table>
+                <tr id="tmpds2-164" class="uncompleted">
+                    <td>
+                        Орден Белого Пути -> ничего (Петрус)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-165" class="uncompleted">
+                    <td>
+                        Орден Стража Принцессы -> ничего
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-166" class="uncompleted">
+                    <td>
+                        Орден Клинка Темной Луны -> 10 знаков возмездия
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-167" class="uncompleted">
+                    <td>
+                        Орден Воина Света -> 25 веры и 10 медалей + душа гвина
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-168" class="uncompleted">
+                    <td>
+                        Орден Лесного Охотника -> ничего (шива и закупиться)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-169" class="uncompleted">
+                    <td>
+                        Орден Темного Духа -> 0 уровень ради тёмной руки
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-170" class="uncompleted">
+                    <td>
+                        Орден Пути Дракона -> ничего
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-171" class="uncompleted">
+                    <td>
+                        Орден Слуги Повелителя Могил -> 10 глаз
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-172" class="uncompleted">
+                    <td>
+                        Орден Слуг Хаоса -> 30 человечности
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Угли</h2>
+
+            <table>
+                <tr id="tmpds2-173" class="uncompleted">
+                    <td>
+                        Большой уголь -> +10 и грубое
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-174" class="uncompleted">
+                    <td>
+                        Очень большой уголь -> +15
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-175" class="uncompleted">
+                    <td>
+                        Кристальный уголь
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-176" class="uncompleted">
+                    <td>
+                        Большой волшебный уголь
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-177" class="uncompleted">
+                    <td>
+                        Зачарованный уголь
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-178" class="uncompleted">
+                    <td>
+                        Небесный уголь
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-179" class="uncompleted">
+                    <td>
+                        Большой небесный уголь
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-180" class="uncompleted">
+                    <td>
+                        Уголь Тьмы
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-181" class="uncompleted">
+                    <td>
+                        Большой огненный уголь
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-182" class="uncompleted">
+                    <td>
+                        Огненный уголь Хаоса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Квест Реи</h2>
+
+            <table>
+                <tr id="tmpds2-183" class="uncompleted">
+                    <td>
+                        Поговорить в храме огня
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-184" class="uncompleted">
+                    <td>
+                        Спасти в катакомбах
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-185" class="uncompleted">
+                    <td>
+                        Скупить всё сразу после в церкви города нежити
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-186" class="uncompleted">
+                    <td>
+                        Убить в тюрьме ахривов
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Квест Квиланы</h2>
+
+            <table>
+                <tr id="tmpds2-187" class="uncompleted">
+                    <td>
+                        ДО УБИЙСТВА ЛОЖЕ ХАОСА вкачать перчатку до +10 и найти на болтах чумного города
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-188" class="uncompleted">
+                    <td>
+                        Скупить всё кроме одного заклинания
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-189" class="uncompleted">
+                    <td>
+                        Говорить до упора
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-190" class="uncompleted">
+                    <td>
+                        Убить ложе хаоса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-191" class="uncompleted">
+                    <td>
+                        Закупить последнее заклинание и получить "подарок"
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Квест Сигмайера</h2>
+
+            <table>
+                <tr id="tmpds2-192" class="uncompleted">
+                    <td>
+                        Поговорить перед крепостью Сена
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-193" class="uncompleted">
+                    <td>
+                        Поговорить внутри крепости
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-194" class="uncompleted">
+                    <td>
+                        Развалить рыцарей и поговорить а Анор Лондо
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-195" class="uncompleted">
+                    <td>
+                        Ответить "ДА" в храме огня и залутать чудо "Силовая волна"
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-196" class="uncompleted">
+                    <td>
+                        Дать 3 фиолетового мха в чумном городе
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-197" class="uncompleted">
+                    <td>
+                        Сказать "ДА" дочери после освобождения из голема перед кристальным гротом
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-198" class="uncompleted">
+                    <td>
+                        Не дать умереть от мобов в болоте Изалита (нельзя убивать всех до прыжка тоже)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-199" class="uncompleted">
+                    <td>
+                        Поговорить с дочкой в Храме Огня
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-200" class="uncompleted">
+                    <td>
+                        Найти у костра в Озере Золы
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Квест Логана</h2>
+
+            <table>
+                <tr id="tmpds2-201" class="uncompleted">
+                    <td>
+                        Спасти ученика в нижней части города нежити
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-202" class="uncompleted">
+                    <td>
+                        Спасти Логана в крепости Сена
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-203" class="uncompleted">
+                    <td>
+                        Поговорить и дать уйти в Храме Огня
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-204" class="uncompleted">
+                    <td>
+                        Найти и освободить Логана в тюрьме Архива
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-205" class="uncompleted">
+                    <td>
+                        Скупить все заклинания до убийства Сита
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-206" class="uncompleted">
+                    <td>
+                        Убить в месте первого сражения с Ситом и забрать вещи с него и с сундука
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Квест Санбро (Солер)</h2>
+
+            <table>
+                <tr id="tmpds2-212" class="uncompleted">
+                    <td>
+                        Поговорить перед виверной в городе нежити
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-213" class="uncompleted">
+                    <td>
+                        Поговорить в Анор Лондо
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-214" class="uncompleted">
+                    <td>
+                        Поговорить у Алтаря Света под виверной
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-215" class="uncompleted">
+                    <td>
+                        Открыть срез у прекрасной госпожи и залутать личинку света ДО УБИЙСТВА ДЕМОНА СТОНОГА
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-216" class="uncompleted">
+                    <td>
+                        Убить демона и поговорить за ареной босса
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-217" class="uncompleted">
+                    <td>
+                        Поговорить на месте убийства личинки света
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Персонажи</h2>
+
+            <table>
+                <tr id="tmpds2-207" class="uncompleted">
+                    <td>
+                        Освободить дефолтного пироманта и закупиться
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-208" class="uncompleted">
+                    <td>
+                        Освободить Зарю из голема за гидрой и закупиться
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-209" class="uncompleted">
+                    <td>
+                        Заразиться яйцом и закупиться у Энги (прекрасная госпожа)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-210" class="uncompleted">
+                    <td>
+                        Закупиться у Освальда (отпускает грехи где были гаргульи)
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+                <tr id="tmpds2-211" class="uncompleted">
+                    <td>
+                        До победы над Нито быть в человеческой форме и убить фантома Лироя в месте с видом на Озеро Золы
+                    </td>
+                    <td>
+                        <button onclick="mark_row(this)">Отметка</button>
+                    </td>
+                </tr>
+            </table>
+        </main>
+
+        <div class="cntr" style="text-align: center; margin-top: 2rem; margin-bottom: 1rem;">
+            <button onclick="reset_storage()"><b>Сбросить прогресс</b></button>
+        </div>
+        
+
+        <script>
+            function reset_storage() {
+                localStorage.clear();
+                document.location.reload();
+            };
+
+            function mark_row(button) {
+                element_id = button.parentNode.parentNode.id;
+                element = document.getElementById(element_id);
+
+                if ( element.classList.contains('uncompleted') ) {
+                    element.className = "completed";
+                    localStorage.setItem(element_id, 1);
+                } else {
+                    element.className = "uncompleted";
+                    localStorage.removeItem(element_id);
+                }
+            }
+
+            window.onload = function () {
+                for (var i = 1; i <= 141; i++) {
+                    var id = "tmpds2-" + i;
+                    var item = localStorage.getItem(id);
+
+                    if (item) {
+                        document.getElementById(id).className = "completed";
+                    }
+                }
+            };
+        </script>
+    </body>
+</html>
