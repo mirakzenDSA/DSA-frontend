@@ -1747,7 +1747,7 @@
 
         <div class="cntr" style="text-align: center; margin-top: 2rem; margin-bottom: 0;">
             <span id="tmpds2-output" style="color: white;"></span>
-            <button onclick="generate_export()"><b style="color: black;">Экспорт</b></button>
+            <!-- <button onclick="generate_export()"><b style="color: black;">Экспорт</b></button> -->
         </div>
         <div class="cntr" style="text-align: center; margin-top: 0; margin-bottom: 0;">
             <input id="tmpds2-input">
@@ -1790,9 +1790,11 @@
                 if ( element.classList.contains('uncompleted') ) {
                     element.className = "completed";
                     localStorage.setItem(element_id, 1);
+                    generate_export();
                 } else {
                     element.className = "uncompleted";
                     localStorage.removeItem(element_id);
+                    generate_export();
                 }
             }
 
