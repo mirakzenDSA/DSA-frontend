@@ -1,3 +1,1 @@
-# Dark Souls Achievements checklist
-
-Sources of [DSA service](https://ds.achievements.mirakzen.ru/)
+# [Dark Souls checklist](https://ds.checklists.mirakzen.com/)

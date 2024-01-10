@@ -1,7 +1,7 @@
 body {
     height: 100%;
 
-    background-image: url("https://static.mirakzen.ru/img/dark_souls/background.jpg");
+    background-image: url("https://static.checklists.mirakzen.com/img/Dark_Souls/background.jpg");
     background-attachment: fixed;
     background-size: cover;
 
@@ -109,7 +109,7 @@ header {
 }
 
 .container-background {
-    background-image: url("https://static.mirakzen.ru/img/dark_souls/background_content.jpg");
+    background-image: url("https://static.checklists.mirakzen.com/img/Dark_Souls/background_content.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -212,7 +212,7 @@ td.vert-align {
 }
 
 .mark {
-    background: url("https://static.mirakzen.ru/img/dark_souls/Mark_Dark_Sing.png");
+    background: url("https://static.checklists.mirakzen.com/img/Dark_Souls/Mark_Dark_Sing.png");
     background-size: 64px;
     background-size: cover;
     width: 64px;
