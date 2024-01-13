@@ -293,3 +293,35 @@ function show_stored_page_data_person(game, data, amount) {
         }
     }
 };
+
+function mark_boss(element) {
+    var counter1_id = "counter1";
+    var count = parseInt(document.getElementById(counter1_id).innerHTML);
+    element_id = element.parentNode.id;
+
+    if ( document.getElementById(element_id).classList.contains('uncompleted') ) {
+        document.getElementById(element_id).className = "completed text-center td-33 td-padding vert-align";
+        localStorage.setItem(element_id, 1);
+        count++;
+    } else {
+        document.getElementById(element_id).className = "uncompleted text-center td-33 td-padding vert-align";
+        localStorage.removeItem(element_id);
+        count--;
+    }
+    document.getElementById(counter1_id).textContent = count;
+};
+
+function show_stored_page_data_boss(game, data, amount) {
+    var counter1_id = "counter1";
+    var count1 = 0;
+
+    for (var i = 1; i <= amount; i++) {
+        var id = game + "_" + data + "-" + i;
+        var boss = localStorage.getItem(id);
+        if (boss == 1) {
+            document.getElementById(id).className = "completed text-center td-33 td-padding vert-align";
+            count1++;
+        }
+    }
+    document.getElementById(counter1_id).textContent = count1;
+};
